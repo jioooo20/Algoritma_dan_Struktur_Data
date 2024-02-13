@@ -6,13 +6,13 @@ public class prakPerulangan {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        double nim;
+        long nim;
 
         System.out.print("Masukkan NIM: ");
-        nim = input.nextDouble();
+        nim = input.nextLong();
         System.out.println("========================");
-        double duadigit = nim;
-        int digit = (int) duadigit % 100;
+        long duadigit = nim;
+        int digit = (int) (duadigit % 100);
 
         if (digit < 10) {
             digit += 10;
