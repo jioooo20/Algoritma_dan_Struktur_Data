@@ -12,7 +12,11 @@ public class prakPerulangan {
         nim = input.nextDouble();
         System.out.println("========================");
         double duadigit = nim;
-        double digit = duadigit % 100;
+        int digit = (int) duadigit % 100;
+
+        if (digit < 10) {
+            digit += 10;
+        }
         System.out.println("n = " + digit);
 
         for (int i = 1; i <= digit; i++) {
