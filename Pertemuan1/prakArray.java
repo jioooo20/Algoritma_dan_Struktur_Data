@@ -63,9 +63,11 @@ public class prakArray {
         System.out.println("Hasil Konversi Nilai");
         System.out.println("==========================");
 
+        System.out.printf("%-15s %-15s %-15s  %-15s \n", "MATA KULIAH", "Nilai Angka", "Nilai Huruf",
+                "Bobot Nilai");
         for (int i = 0; i < matkul.length; i++) {
             if (matkul[i] != null) {
-                System.out.printf("%-15s %-10.1f %-10s  %-10.1f \n", matkul[i], nilai[i], NilHuruf[i], bobot[i]);
+                System.out.printf("%-15s %-15.1f %-15s  %-15.1f \n", matkul[i], nilai[i], NilHuruf[i], bobot[i]);
             }
         }
         System.out.println("======================");
