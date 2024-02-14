@@ -37,6 +37,15 @@ Hasil output dari Program Toko Bunga
 
 Hasil output dari Program Plat Mobil
 
+<img src = "tugas11.png">
+<img src = "tugas12.png">
+
 ## Tugas 2
 
 Hasil output dari Program JKW
+
+<img src = "tugas21.png"><br>
+
+<img src = "tugas22.png"><br>
+
+<img src = "tugas23.png">
