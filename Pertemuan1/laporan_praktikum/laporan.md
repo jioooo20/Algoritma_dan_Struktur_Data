@@ -32,3 +32,11 @@ Hasil output dari Program Toko Bunga
 2. <img src="fungsistok2.png">
 3. <img src="fungsistok3.png">
 4. <img src="fungsistok4.png">
+
+## Tugas 1
+
+Hasil output dari Program Plat Mobil
+
+## Tugas 2
+
+Hasil output dari Program JKW
