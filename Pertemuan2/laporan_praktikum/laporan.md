@@ -21,3 +21,16 @@ Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki 
 5. Menurut Anda, mengapa method restock() mempunyai satu parameter berupa bilangan int?  
    Jawab: Karena untuk melakukan restock hanya diperlukan jumlah buku nya saja dan berupa ber tipe data int.
 6. Commit dan push kode program ke Github
+
+## Percobaan 2
+
+#### Hasil Run Program
+
+![alt text](image-1.png)
+
+1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi! Apa nama object yang dihasilkan?  
+   Jawab: ![alt text](image-2.png), nama objek yang dihasilkan (bk1).
+2. Bagaimana cara mengakses atribut dan method dari suatu objek?  
+   Jawab: Cara mengakses atribut dengan cara (namaObjek.namaAtribut).
+3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?  
+   Jawab: Karena telah dilakukan pemanggilan method terjual() dan gantiHarga(), sehingga ketika dilakukan pemanggilan method tampilInformasi() informasi akan berubah.
