@@ -61,6 +61,142 @@ Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki 
    Jawab: Tidak, karena posisi method tidak mempengaruhi urutan kode dijalankan. Yang mempengaruhi urutan kode dijalankan ialah kapan method tersebut dipanggil.
 5. Buat object baru dengan nama buku (NamaMahasiswa) menggunakan konstruktor
    berparameter dari class Buku!  
-   Jawab: Kode ![alt text](image-7.png)
+   Jawab: Kode
+   ```
+        Buku13 NamaMahasiswa = new Buku13("Bisa Menang? ~is", "Yeonjiseo", 231, 13, 74500);
+        NamaMahasiswa.terjual(3);
+        NamaMahasiswa.tampilInformasi();
+   ```
    Hasil Run ![alt text](image-8.png)
 6. Commit dan push kode program ke Github
+
+## 2.4 Latihan Praktikum
+
+### 2.4.1 Buku
+
+1.  Method hitungHargaTotal();
+
+```
+  int hitungHargaTotal() {
+        int total = jml * harga;
+        return total;
+    }
+```
+
+2. hitungDiskon();
+
+```
+  double hitungDiskon() {
+        int total = hitungHargaTotal();
+        double diskon = 0;
+        if (total > 150000) {
+            diskon = total * 0.12;
+        } else if (total >= 75000 && total <= 150000) {
+            diskon = total * 0.05;
+        } else {
+            System.out.println("Anda gak dapat diskon :D");
+        }
+        return diskon;
+    }
+```
+
+3. hitungHargaBayar();
+
+```
+void hitungHargaBayar() {
+        double bayar = hitungHargaTotal() - hitungDiskon();
+
+        System.out.println("Harga yang dibayar setelah diskon: " + bayar);
+    }
+```
+
+#### Hasil Run Program
+
+![alt text](image-9.png)
+
+### 2.4.2 Dragon
+
+1. Kode class Dragon13
+
+```
+public class Dragon13 {
+    int x = 4, y = 6, width = 10, height = 10;
+
+    void moveLeft() {
+        x -= 1;
+        if (x < 0) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveRight() {
+        x += 1;
+        if (x > width) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveUp() {
+        y += 1;
+        if (y > height) {
+            detectCollision(x, y);
+        }
+    }
+
+    void moveDown() {
+        y -= 1;
+        if (y < 0) {
+            detectCollision(x, y);
+        }
+    }
+
+    void printPosition() {
+        System.out.println("Posisi X = " + x);
+        System.out.println("Posisi Y = " + y);
+    }
+
+    void detectCollision(int x, int y) {
+        System.out.println("GAME OVER");
+        System.out.println("Anda nabrak tembok");
+        System.out.println("Posisi X = " + x);
+        System.out.println("Posisi Y = " + y);
+
+    }
+
+    public Dragon13() {
+
+    }
+
+}
+```
+
+2. Kode Main
+
+```
+public class DragonMain13 {
+    public static void main(String[] args) {
+
+        Dragon13 npc = new Dragon13();
+
+        System.out.println("Posisi Awal");
+        npc.printPosition();
+        System.out.println("===================");
+        npc.moveLeft();
+        npc.moveLeft();
+        npc.moveLeft();
+        npc.moveDown();
+        npc.moveRight();
+        npc.moveUp();
+        npc.moveUp();
+        npc.moveUp();
+        npc.moveUp();
+        npc.moveLeft();
+        npc.moveLeft();
+        npc.moveLeft();
+    }
+}
+```
+
+#### Hasil Run Program
+
+![alt text](image-10.png)
