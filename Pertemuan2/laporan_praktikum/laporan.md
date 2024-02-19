@@ -4,11 +4,13 @@ Nama : Giovano Alkandri
 Nim : 2341720096  
 Kelas : TI-1H
 
-## Percobaan 1
+## 2.1 Percobaan 1
 
 #### Hasil Run Program
 
 Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki hasil Running.
+
+### 2.1.1 Pertanyaan
 
 1. Sebutkan dua karakteristik class atau object!  
    Jawab: Class atau Objek memiliki 2 karakteristik yaitu memiliki Atribut/Variable dan Method/Fungsi.
@@ -22,11 +24,13 @@ Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki 
    Jawab: Karena untuk melakukan restock hanya diperlukan jumlah buku nya saja dan berupa ber tipe data int.
 6. Commit dan push kode program ke Github
 
-## Percobaan 2
+## 2.2 Percobaan 2
 
 #### Hasil Run Program
 
 ![alt text](image-1.png)
+
+### 2.2.1 Pertanyaan
 
 1. Pada class BukuMain, tunjukkan baris kode program yang digunakan untuk proses instansiasi! Apa nama object yang dihasilkan?  
    Jawab: ![alt text](image-2.png), nama objek yang dihasilkan (bk1).
