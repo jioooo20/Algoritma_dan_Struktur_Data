@@ -6,6 +6,10 @@ Kelas : TI-1H
 
 ## Percobaan 1
 
+#### Hasil Run Program
+
+Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki hasil Running.
+
 1. Sebutkan dua karakteristik class atau object!  
    Jawab: Class atau Objek memiliki 2 karakteristik yaitu memiliki Atribut/Variable dan Method/Fungsi.
 2. Perhatikan class Buku pada Praktikum 1 tersebut, ada berapa atribut yang dimiliki oleh class Buku? Sebutkan apa saja atributnya!  

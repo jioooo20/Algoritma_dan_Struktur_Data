@@ -25,7 +25,7 @@ public class Buku13 {
     }
 
     void gantiHarga(int hrg) {
-        stok = hrg;
+        harga = hrg;
     }
 
 }
