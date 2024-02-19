@@ -38,3 +38,29 @@ Tidak dapat dijalankan karena tidak memiliki class main sehingga tidak memiliki 
    Jawab: Cara mengakses atribut dengan cara (namaObjek.namaAtribut).
 3. Mengapa hasil output pemanggilan method tampilInformasi() pertama dan kedua berbeda?  
    Jawab: Karena telah dilakukan pemanggilan method terjual() dan gantiHarga(), sehingga ketika dilakukan pemanggilan method tampilInformasi() informasi akan berubah.
+
+## 2.3 Percobaan 3
+
+#### Hasil Run Program
+
+![alt text](image-3.png)
+
+### 2.3.1 Pertanyaan
+
+1. Pada class Buku di Percobaan 3, tunjukkan baris kode program yang digunakan untuk
+   mendeklarasikan konstruktor berparameter!  
+   Jawab: ![alt text](image-5.png)
+2. Perhatikan class BukuMain. Apa sebenarnya yang dilakukan pada baris program berikut? ![alt text](image-4.png)  
+   Jawab: Kode tersebut melakukan instansiasi objek dengan parameter.
+3. Hapus konstruktor default pada class Buku, kemudian compile dan run program. Bagaimana
+   hasilnya? Jelaskan mengapa hasilnya demikian!  
+   Jawab: ![alt text](image-6.png)  
+   Terjadi error dikarenakan pada instansiasi objek bk1 tidak memiliki konstuktor karena baru saja dihapus.
+4. Setelah melakukan instansiasi object, apakah method di dalam class Buku harus diakses
+   secara berurutan? Jelaskan alasannya!  
+   Jawab: Tidak, karena posisi method tidak mempengaruhi urutan kode dijalankan. Yang mempengaruhi urutan kode dijalankan ialah kapan method tersebut dipanggil.
+5. Buat object baru dengan nama buku (NamaMahasiswa) menggunakan konstruktor
+   berparameter dari class Buku!  
+   Jawab: Kode ![alt text](image-7.png)
+   Hasil Run ![alt text](image-8.png)
+6. Commit dan push kode program ke Github
