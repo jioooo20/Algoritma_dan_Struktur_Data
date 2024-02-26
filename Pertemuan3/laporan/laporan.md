@@ -11,9 +11,12 @@ Kelas : TI-1H
 ### 3.1.1 Verifikasi Hasil Percobaan
 
 Contoh verivikasi hasil percobaan.
-![alt text](image.png)  
-Hasil saya:  
- ![alt text](image-1.png)
+
+![alt text](image.png)
+
+Hasil saya:
+
+![alt text](image-1.png)
 
 ### 3.1.2 Pertanyaan
 
@@ -31,23 +34,30 @@ Hasil saya:
 
         PersegiPanjang13[] ppArray = new PersegiPanjang[3];
 
-> Jawab: Kode tersebut melakukan instansiasi array. 4. Apa yang dimaksud dengan kode berikut ini:
+    > Jawab: Kode tersebut melakukan instansiasi array.
+
+4.  Apa yang dimaksud dengan kode berikut ini:
 
         ppArray[1] = new PersegiPanjang13();
         ppArray[1].panjang = 80;
         ppArray[1].lebar = 40;
 
-> Jawab: Kode tersebut melakukan pengisian nilai dalam atribut object array pada index [1]. 5. Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2?
-> Jawab: Karena jika class Main dan class PersegiPanjang13 digabun akan terjadi error (`No enclosing instance of type ArrayObjects13 is accessible. Must qualify the allocation with an enclosing instance of type ArrayObjects13 (e.g. x.new A() where x is an instance of ArrayObjects13)`).
+    > Jawab: Kode tersebut melakukan pengisian nilai dalam atribut object array pada index [1].
+
+5.  Mengapa class main dan juga class PersegiPanjang dipisahkan pada uji coba 3.2?
+    > Jawab: Karena jika class Main dan class PersegiPanjang13 digabun akan terjadi error (`No enclosing instance of type ArrayObjects13 is accessible. Must qualify the allocation with an enclosing instance of type ArrayObjects13 (e.g. x.new A() where x is an instance of ArrayObjects13)`).
 
 ## 3.2 Percobaan 2: Menerima Input Isian Array Menggunakan Looping
 
 ### 3.2.1 Verifikasi Hasil Percobaan
 
 Contoh verifikasi hasil percobaan.
-![alt text](image-5.png)  
-Hasil saya:  
- ![alt text](image-6.png)
+
+![alt text](image-5.png)
+
+Hasil saya:
+
+![alt text](image-6.png)
 
 ### 3.2.2 Pertanyaan
 
