@@ -71,7 +71,7 @@ Hasil saya:
             Persegi[] pgArray = new Persegi[100];
             pgArray[5].sisi = 20;
 
-> Jawab: Error muncul dikarenakan index array belum dipanggil sehingga tidak dapat mengisikan atribut sisi.
+    > Jawab: Error muncul dikarenakan index array belum dipanggil sehingga tidak dapat mengisikan atribut sisi.
 
 4.  Modifikasi kode program pada praktikum 3.3 agar length array menjadi inputan dengan Scanner!
 
