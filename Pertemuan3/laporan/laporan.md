@@ -104,8 +104,11 @@ Hasil saya:
 ### 3.3.1 Verifikasi Hasil Percobaan
 
 Contoh verifikasi hasil percobaan.
-![alt text](image-7.png)  
-Hasil saya:  
+
+![alt text](image-7.png)
+
+Hasil saya:
+
 ![alt text](image-8.png)
 
 ### 3.3.2 Pertanyaan
