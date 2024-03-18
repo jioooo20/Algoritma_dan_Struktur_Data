@@ -29,28 +29,27 @@ public class MainPangkat {
         input.nextLine();
 
         switch (pilih) {
-            case value:
-
+            case 1:
+                System.out.println("Hasil pangkat BRUTE FORCE");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari " +
+                            png[i].nilai + " pangkat " +
+                            png[i].pangkat + " adalah " +
+                            png[i].PangkatBF(png[i].nilai, png[i].pangkat));
+                }
+                break;
+            case 2:
+                System.out.println("Hasil pangkat Divide Conquer");
+                for (int i = 0; i < elemen; i++) {
+                    System.out.println("Hasil dari " +
+                            png[i].nilai + " pangkat " +
+                            png[i].pangkat + " adalah " +
+                            png[i].PangkatDC(png[i].nilai, png[i].pangkat));
+                }
                 break;
 
             default:
                 break;
-        }
-
-        System.out.println("Hasil pangkat BRUTE FORCE");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " +
-                    png[i].nilai + " pangkat " +
-                    png[i].pangkat + " adalah " +
-                    png[i].PangkatBF(png[i].nilai, png[i].pangkat));
-        }
-
-        System.out.println("Hasil pangkat Divide Conquer");
-        for (int i = 0; i < elemen; i++) {
-            System.out.println("Hasil dari " +
-                    png[i].nilai + " pangkat " +
-                    png[i].pangkat + " adalah " +
-                    png[i].PangkatDC(png[i].nilai, png[i].pangkat));
         }
 
         input.close();
