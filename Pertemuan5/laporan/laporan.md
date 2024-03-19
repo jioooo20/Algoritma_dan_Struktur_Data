@@ -1,4 +1,4 @@
-# Laporan Jobsheet 3
+# Laporan Jobsheet 4
 
 ```
 Nama : Giovano Alkandri
@@ -10,7 +10,7 @@ Kelas : TI-1H
 
 ### 4.1.1 Verifikasi Hasil Percobaan
 
-**Contoh verifikasi hasil percobaan.**
+**Contoh verifikasi hasil percobaan**
 
 ![alt text](image.png)
 
@@ -18,7 +18,7 @@ Kelas : TI-1H
 
 ![alt text](image-1.png)
 
-4.1.2 Pertanyaan
+### 4.1.2 Pertanyaan
 
 1.  Pada base line Algoritma Divide Conquer untuk melakukan pencarian nilai faktorial, jelaskan perbedaan bagian kode pada penggunaan if dan else!
 
@@ -50,7 +50,7 @@ Kelas : TI-1H
 
 ### 4.2.1 Verifikasi Hasil Percobaan
 
-**Contoh verifikasi hasil percobaan.**
+**Contoh verifikasi hasil percobaan**
 
 ![alt text](image-2.png)
 
@@ -58,7 +58,7 @@ Kelas : TI-1H
 
 ![alt text](image-3.png)
 
-4.2.2 Pertanyaan
+### 4.2.2 Pertanyaan
 
 1.  Jelaskan mengenai perbedaan 2 method yang dibuat yaitu PangkatBF() dan PangkatDC()!
 
@@ -111,7 +111,7 @@ Kelas : TI-1H
 
 ### 4.3.1 Verifikasi Hasil Percobaan
 
-**Contoh verifikasi hasil percobaan.**
+**Contoh verifikasi hasil percobaan**
 
 ![alt text](image-4.png)
 
@@ -119,7 +119,7 @@ Kelas : TI-1H
 
 ![alt text](image-5.png)
 
-4.4.3 Pertanyaan
+### 4.4.3 Pertanyaan
 
 1.  Mengapa terdapat formulasi return value berikut?Jelaskan!
 
@@ -129,7 +129,7 @@ Kelas : TI-1H
 
 2.  Kenapa dibutuhkan variable mid pada method TotalDC()?
 
-    Variable mid digunakan untuk menentukan index tengah dari total elemen
+         Variable mid digunakan untuk menentukan index tengah dari total elemen
 
 3.  Program perhitungan keuntungan suatu perusahaan ini hanya untuk satu perusahaan saja. Bagaimana cara menghitung sekaligus keuntungan beberapa bulan untuk beberapa perusahaan.(Setiap perusahaan bisa saja memiliki jumlah bulan berbeda-beda)? Buktikan dengan program!
 
@@ -176,3 +176,17 @@ Kelas : TI-1H
 **Berikut adlaah hasil Running kode program**
 
 ![alt text](image-6.png)
+
+## 4.4 Hasil Latihan Praktikum
+
+![alt text](image-8.png)
+
+Tentukan:
+
+a. top_acceleration tertinggi menggunakan Divide and Conquer!  
+b. top_acceleration terendah menggunakan Divide and Conquer!  
+c. Rata-rata top_power dari seluruh mobil menggunakan Brute Force!
+
+### Hasil Run Program
+
+![alt text](image-7.png)
