@@ -19,6 +19,10 @@ public class Showroom {
         return top_acc;
     }
 
+    public int TopPow() {
+        return top_pow;
+    }
+
     public static int HighestAcc(Showroom[] showrooms, int l, int r) {
         if (l == r) {
             return l;
@@ -66,7 +70,7 @@ public class Showroom {
         double totPow = 0;
         int totMobil = 0;
         for (Showroom showroom : showrooms) {
-            totPow += showroom.TopAcc();
+            totPow += showroom.TopPow();
             totMobil++;
         }
         return totPow / totMobil;
