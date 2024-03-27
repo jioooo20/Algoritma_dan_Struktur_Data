@@ -18,8 +18,11 @@ public class Main {
         System.out.println("Data mahasiswa sblm sorting :");
         list.tampil();
 
-        System.out.println("Data mhs setelah sorting desc berdasarkan ipk");
-        list.bubbleSort();
+        System.out.println("Data mhs setelah sorting asc berdasarkan ipk");
+        // list.bubbleSort();
+        // list.selectionSort();
+        // list.insertionSortAsc();
+        list.insertionSortDesc();
         list.tampil();
 
     }
