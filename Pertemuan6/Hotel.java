@@ -5,7 +5,7 @@ public class Hotel {
     public int harga;
     public byte bintang;
 
-    void Hotel(String n, String k, int h, byte b) {
+    Hotel(String n, String k, int h, byte b) {
         nama = n;
         kota = k;
         harga = h;
@@ -13,7 +13,10 @@ public class Hotel {
     }
 
     void spill() {
-        System.out.println("");
+        System.out.println("Hotel       : " + nama);
+        System.out.println("Lokasi      : " + kota);
+        System.out.println("Price       : " + harga);
+        System.out.println("Rating      : " + bintang);
     }
 
 }

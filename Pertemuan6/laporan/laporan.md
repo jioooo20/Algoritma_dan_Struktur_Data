@@ -103,4 +103,14 @@ Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses 
 
 ![alt text](image-15.png)
 
-## Latihan Praktikum
+## 5.4 Latihan Praktikum
+
+![alt text](image-16.png)
+
+1. Sorting Harga
+
+![alt text](image-17.png)
+
+2. Sorting Rating
+
+![alt text](image-18.png)
