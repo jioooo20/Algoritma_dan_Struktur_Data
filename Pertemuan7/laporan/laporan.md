@@ -113,3 +113,123 @@ Kelas : TI-1H
 ![alt text](image-15.png)
 
 ## 6.4 Latihan Praktikum
+
+1.  Modifikasi percobaan searching diatas dengan ketentuan berikut ini
+
+    - Ubah tipe data dari kode Buku yang awalnya int menjadi String
+
+      ![alt text](image-16.png)
+
+    - Tambahkan method untuk pencarian kode Buku (bertipe data String) dengan menggunakan sequential search dan binary search.
+
+      Kode Buku dengan Sequential Search
+
+            int findseqSearch(String find) { // kdBuku String
+                int awal = -1;
+                for (int i = 0; i < listBk.length; i++) {
+                    if (find.equalsIgnoreCase(listBk[i].kdBuku)) {
+                        awal = i;
+                        break;
+                    }
+                }
+                return awal;
+            }
+
+      Kode Buku dengan Binary Search
+
+            void StrInsertionSortAsc() {
+                for (int i = 1; i < listBk.length; i++) {
+                    Buku13 temp = listBk[i];
+                    int j = i;
+                    while (j > 0 && listBk[j - 1].kdBuku.compareTo(temp.kdBuku) > 0) {
+                        listBk[j] = listBk[j - 1];
+                        j--;
+                    }
+                    listBk[j] = temp;
+                }
+            }
+
+            public int StrFindBinarySearch(String cari, int l, int r) {
+                int m;
+                if (r >= l) {
+                    m = (l + r) / 2;
+                    if (cari.equalsIgnoreCase(listBk[m].kdBuku)) {
+                        return m;
+                    } else if (cari.compareTo(listBk[m].kdBuku) < 0) {
+                        return StrFindBinarySearch(cari, l, m - 1);
+                    } else {
+                        return StrFindBinarySearch(cari, m + 1, r);
+                    }
+                }
+                return -1;
+            }
+
+      ### Hasil Kode
+
+      ![alt text](image-17.png)
+
+2.  Modifikasi percobaan searching diatas dengan ketentuan berikut ini
+
+    - Tambahkan method pencarian judul buku menggunakan sequential search dan binary search. Sebelum dilakukan searching dengan binary search data harus dilakukan pengurutan dengan menggunakan algoritma Sorting (bebas pilih algoritma sorting apapun)! Sehingga ketika input data acak, maka algoritma searching akan tetap berjalan
+
+      Judul Buku dengan Sequential Search
+
+            Buku13 findbuku(String find) {
+                int awal = -1;
+                for (int i = 0; i < listBk.length; i++) {
+                    if (find.equalsIgnoreCase(listBk[i].judulBuku)) {
+                        awal = i;
+                        break;
+                    }
+                }
+                return listBk[awal];
+            }
+
+      Judul Buku dengan Binary Search
+
+            void StrInsertionSortJudulAsc() {
+                for (int i = 1; i < listBk.length; i++) {
+                    Buku13 temp = listBk[i];
+                    int j = i;
+                    while (j > 0 && listBk[j - 1].judulBuku.compareTo(temp.judulBuku) > 0) {
+                        listBk[j] = listBk[j - 1];
+                        j--;
+                    }
+                    listBk[j] = temp;
+                }
+            }
+
+            public int StrFindBukuBinary(String cari, int l, int r) {
+                int m;
+                if (r >= l) {
+                    m = (l + r) / 2;
+                    if (cari.compareToIgnoreCase(listBk[m].judulBuku) == 0) {
+                        return m;
+                    } else if (cari.compareToIgnoreCase(listBk[m].judulBuku) < 0) {
+                        return StrFindBukuBinary(cari, l, m - 1);
+                    } else {
+                        return StrFindBukuBinary(cari, m + 1, r);
+                    }
+                }
+                return -1;
+            }
+
+      ### Hasil Kode
+
+      ![alt text](image-18.png)
+
+    - Buat aturan untuk mendeteksi hasil pencarian judul buku yang lebih dari 1 hasil dalam bentuk kalimat peringatan! Pastikan algoritma yang diterapkan sesuai dengan kasus yang diberikan!
+
+            public int judulDobel(String cari) {
+                int hitung = 0;
+                for (int i = 0; i < listBk.length; i++) {
+                    if (listBk[i].judulBuku != null && listBk[i].judulBuku.equalsIgnoreCase(cari)) {
+                        hitung++;
+                    }
+                }
+                return hitung;
+            }
+
+      ### Hasil Kode
+
+      ![alt text](image-19.png)

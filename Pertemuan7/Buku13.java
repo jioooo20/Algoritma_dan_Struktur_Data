@@ -1,13 +1,13 @@
 package Pertemuan7;
 
 public class Buku13 {
-    int kdBuku;
+    String kdBuku;
     String judulBuku;
     int thnTerbit;
     String pengarang;
     int stok;
 
-    public Buku13(int kd, String title, int terbit, String author, int stok) {
+    public Buku13(String kd, String title, int terbit, String author, int stok) {
         kdBuku = kd;
         judulBuku = title;
         thnTerbit = terbit;

@@ -19,10 +19,21 @@ public class PencarianBuku13 {
         }
     }
 
-    int findseqSearch(int find) {
+    // int findseqSearch(int find) { // kdBuku int
+    // int awal = -1;
+    // for (int i = 0; i < listBk.length; i++) {
+    // if (find == listBk[i].kdBuku) {
+    // awal = i;
+    // break;
+    // }
+    // }
+    // return awal;
+    // }
+
+    int findseqSearch(String find) { // kdBuku String
         int awal = -1;
         for (int i = 0; i < listBk.length; i++) {
-            if (find == listBk[i].kdBuku) {
+            if (find.equalsIgnoreCase(listBk[i].kdBuku)) {
                 awal = i;
                 break;
             }
@@ -41,11 +52,24 @@ public class PencarianBuku13 {
         return listBk[awal];
     }
 
-    void insertionSortAsc() {
+    // void insertionSortAsc() {
+
+    // for (int i = 1; i < listBk.length; i++) {
+    // Buku13 temp = listBk[i];
+    // int j = i;
+    // while (j > 0 && listBk[j - 1].kdBuku > temp.kdBuku) {
+    // listBk[j] = listBk[j - 1];
+    // j--;
+    // }
+    // listBk[j] = temp;
+    // }
+    // }
+
+    void StrInsertionSortAsc() {
         for (int i = 1; i < listBk.length; i++) {
             Buku13 temp = listBk[i];
             int j = i;
-            while (j > 0 && listBk[j - 1].kdBuku > temp.kdBuku) {
+            while (j > 0 && listBk[j - 1].kdBuku.compareTo(temp.kdBuku) > 0) {
                 listBk[j] = listBk[j - 1];
                 j--;
             }
@@ -53,23 +77,65 @@ public class PencarianBuku13 {
         }
     }
 
-    public int FindBinarySearch(int cari, int l, int r) {
+    void StrInsertionSortJudulAsc() {
+        for (int i = 1; i < listBk.length; i++) {
+            Buku13 temp = listBk[i];
+            int j = i;
+            while (j > 0 && listBk[j - 1].judulBuku.compareTo(temp.judulBuku) > 0) {
+                listBk[j] = listBk[j - 1];
+                j--;
+            }
+            listBk[j] = temp;
+        }
+    }
 
+    // public int FindBinarySearch(int cari, int l, int r) {
+
+    // int m;
+    // if (r >= l) {
+    // m = (l + r) / 2;
+    // if (cari == listBk[m].kdBuku) {
+    // return m;
+    // } else if (cari < listBk[m].kdBuku) {
+    // return FindBinarySearch(cari, l, m - 1);
+    // } else {
+    // return FindBinarySearch(cari, m + 1, r);
+    // }
+    // }
+    // return -1;
+    // }
+
+    public int StrFindBinarySearch(String cari, int l, int r) {
         int m;
         if (r >= l) {
             m = (l + r) / 2;
-            if (cari == listBk[m].kdBuku) {
+            if (cari.equalsIgnoreCase(listBk[m].kdBuku)) {
                 return m;
-            } else if (cari < listBk[m].kdBuku) {
-                return FindBinarySearch(cari, l, m - 1);
+            } else if (cari.compareTo(listBk[m].kdBuku) < 0) {
+                return StrFindBinarySearch(cari, l, m - 1);
             } else {
-                return FindBinarySearch(cari, m + 1, r);
+                return StrFindBinarySearch(cari, m + 1, r);
             }
         }
         return -1;
     }
 
-    void printPosisi(int x, int pcc) {
+    public int StrFindBukuBinary(String cari, int l, int r) {
+        int m;
+        if (r >= l) {
+            m = (l + r) / 2;
+            if (cari.compareToIgnoreCase(listBk[m].judulBuku) == 0) {
+                return m;
+            } else if (cari.compareToIgnoreCase(listBk[m].judulBuku) < 0) {
+                return StrFindBukuBinary(cari, l, m - 1);
+            } else {
+                return StrFindBukuBinary(cari, m + 1, r);
+            }
+        }
+        return -1;
+    }
+
+    void printPosisi(String x, int pcc) {
         if (pcc != -1) {
             System.out.println("data : " + x + " ditemukan pada index " + pcc);
         } else {
@@ -77,7 +143,7 @@ public class PencarianBuku13 {
         }
     }
 
-    void printData(int x, int pcc) {
+    void printData(String x, int pcc) {
         if (pcc != -1) {
             System.out.println("Kode Buku : " + x);
             System.out.println("Judul : " + listBk[pcc].judulBuku);
@@ -87,6 +153,16 @@ public class PencarianBuku13 {
         } else {
             System.out.println("data " + x + " tidak ditemukan");
         }
+    }
+
+    public int judulDobel(String cari) {
+        int hitung = 0;
+        for (int i = 0; i < listBk.length; i++) {
+            if (listBk[i].judulBuku != null && listBk[i].judulBuku.equalsIgnoreCase(cari)) {
+                hitung++;
+            }
+        }
+        return hitung;
     }
 
 }
