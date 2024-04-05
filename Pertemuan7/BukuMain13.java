@@ -44,7 +44,7 @@ public class BukuMain13 {
         data.printPosisi(cari, posisi);
         data.printData(cari, posisi);
         System.out.println("===============================================");
-        System.out.println("menggunakan sequential search");
+        System.out.println("menggunakan sequential search ");
 
         int posisii = data.findseqSearch(cari);
         data.printPosisi(cari, posisii);
