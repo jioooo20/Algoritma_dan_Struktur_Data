@@ -76,8 +76,8 @@ class Gudang13 {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan barang di Gudang : ");
             // for (int i = top; i >=0; i--) {
-            for (int i = 0; i < top; i++) {
-                System.out.printf("Kode %d: %s (Kategori $s)\n", tumpukan[i].kode, tumpukan[i].nama,
+            for (int i = 0; i < top+1; i++) {
+                System.out.printf("Kode %d: %s (Kategori %s )\n", tumpukan[i].kode, tumpukan[i].nama,
                         tumpukan[i].kategori);
             }
         } else {
@@ -90,14 +90,19 @@ class Gudang13 {
 class utama13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Gudang13 gudang = new Gudang13(7);
+
+        System.out.print("Masukkan Kapasitas Gudang : ");
+        int cap = scanner.nextInt();
+        scanner.nextLine();
+        Gudang13 gudang = new Gudang13(cap);
 
         while (true) {
             System.out.println("\nMenu");
             System.out.println("1. Tambah barang");
             System.out.println("2. Ambil barang");
             System.out.println("3. Tampilkan tumpukan barang");
-            System.out.println("4. keluar");
+            System.out.println("4. Lihat barang teratas");
+            System.out.println("5. keluar");
             System.out.print("Pilih Operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
@@ -121,15 +126,12 @@ class utama13 {
                     gudang.tampilkanBarang();
                 break;
                 case 4:
+                    gudang.lihatBarangTeratas();
                 break;
                 default:
-                System.out.println("Pilih angka 1 - 4");
+                System.out.println("Pilih angka 1 - 5");
                     break;
-            }
+            }        
         }
-
-
-
-
     }
 }
