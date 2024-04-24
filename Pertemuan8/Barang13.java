@@ -54,6 +54,7 @@ class Gudang13 {
             Barang13 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari gudang");
+            System.out.println("Kode dalam biner: "+ konversiDesimalkeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");
@@ -76,12 +77,66 @@ class Gudang13 {
         if (!cekKosong()) {
             System.out.println("Rincian tumpukan barang di Gudang : ");
             // for (int i = top; i >=0; i--) {
-            for (int i = 0; i < top+1; i++) {
+            for (int i = 0; i < top + 1; i++) {
                 System.out.printf("Kode %d: %s (Kategori %s )\n", tumpukan[i].kode, tumpukan[i].nama,
                         tumpukan[i].kategori);
             }
         } else {
             System.out.println("Tumpukan barang kosong");
+        }
+    }
+
+    public String konversiDesimalkeBiner(int kode) {
+        StackKonversi13 stack = new StackKonversi13();
+        while (kode > 0) {
+            int sisa = kode % 2;
+            stack.push(sisa);
+            kode = kode / 2;
+        }
+        String biner = new String();
+        while (!stack.isEmpty()) {
+            biner += stack.pop();
+        }
+        return biner;
+    }
+
+}
+
+class StackKonversi13 {
+    int size, top;
+    int[] tumpukanBiner;
+
+    public void StackKonversi() {
+        this.size = 32; // asumsi 32 bit
+        tumpukanBiner = new int[size];
+        top = -1;
+    }
+
+    public boolean isEmpty() {
+        return top == -1;
+    }
+
+    public boolean isFull() {
+        return top == size - 1;
+    }
+
+    public void push(int data) {
+        if (isFull()) {
+            System.out.println("Stack Penuh");
+        } else {
+            top++;
+            tumpukanBiner[top] = data;
+        }
+    }
+
+    public int pop() {
+        if (isEmpty()) {
+            System.out.println("Stack Kosong");
+            return -1;
+        } else {
+            int data = tumpukanBiner[top];
+            top--;
+            return data;
         }
     }
 
@@ -121,17 +176,17 @@ class utama13 {
                     break;
                 case 2:
                     gudang.ambiBarang13();
-                break;
+                    break;
                 case 3:
                     gudang.tampilkanBarang();
-                break;
+                    break;
                 case 4:
                     gudang.lihatBarangTeratas();
-                break;
-                default:
-                System.out.println("Pilih angka 1 - 5");
                     break;
-            }        
+                default:
+                    System.out.println("Pilih angka 1 - 5");
+                    break;
+            }
         }
     }
 }

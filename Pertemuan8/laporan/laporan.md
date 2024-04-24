@@ -61,6 +61,20 @@ Kelas : TI-1H
 5. Commit dan push kode program ke Github
 
 
+## Percobaan 2: Konversi Kode Barang ke Biner
+
+### 7.2.1 Verifikasi Hasil Percobaan
+
+**Contoh verifikasi hasil percobaan**
+
+
+
+**Hasil Program**
+
+
+
+### 7.2.2 Pertanyaa
+
 
 ## 7.4 Latihan Praktikum
 
