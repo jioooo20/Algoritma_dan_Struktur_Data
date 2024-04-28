@@ -54,7 +54,7 @@ class Gudang13 {
             Barang13 delete = tumpukan[top];
             top--;
             System.out.println("Barang " + delete.nama + " diambil dari gudang");
-            System.out.println("Kode dalam biner: "+ konversiDesimalkeBiner(delete.kode));
+            System.out.println("Kode dalam biner: " + konversiDesimalkeBiner(delete.kode));
             return delete;
         } else {
             System.out.println("Tumpukan barang kosong.");
@@ -88,7 +88,7 @@ class Gudang13 {
 
     public String konversiDesimalkeBiner(int kode) {
         StackKonversi13 stack = new StackKonversi13();
-        while (kode > 0) {
+        while (kode != 0) { // atau kode>0
             int sisa = kode % 2;
             stack.push(sisa);
             kode = kode / 2;
@@ -106,7 +106,7 @@ class StackKonversi13 {
     int size, top;
     int[] tumpukanBiner;
 
-    public void StackKonversi() {
+    public StackKonversi13() {
         this.size = 32; // asumsi 32 bit
         tumpukanBiner = new int[size];
         top = -1;
@@ -173,6 +173,7 @@ class utama13 {
                     String kategori = scanner.nextLine();
                     Barang13 barangBaru = new Barang13(kode, nama, kategori);
                     gudang.tambahBarang(barangBaru);
+                    gudang.konversiDesimalkeBiner(kode);
                     break;
                 case 2:
                     gudang.ambiBarang13();

@@ -67,14 +67,39 @@ Kelas : TI-1H
 
 **Contoh verifikasi hasil percobaan**
 
-
+![alt text](image-7.png)
 
 **Hasil Program**
 
-
+![alt text](image-6.png)
 
 ### 7.2.2 Pertanyaa
 
+1. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!  
+
+        Tidak terjadi perubahan. Karena selama kode tidak sama dengan 0, program akan berjalan dengan normal, karena tidak mungkin jika sebuah kode adalah kurang dari dan sama dengan 0.
+
+2. Jelaskan alur kerja dari method konversiDesimalKeBiner!  
+
+        Alur pertama yaitu, hasil pembagian kode dengan 2 akan disimpan di objek stack. lalu perulangan while akan dijalankan selama kode !=0 atau >0, pada setiap iterasi, nilai sisa hasil bagi akan disimpan dalam variable sisa, nilai sisa tersebut kemudian ditambahkan(push) ke dalam tumpukan stack menggunakan method stack.push(sisa), nilai variable kode akan diganti dengan hasil bagi kode dengan 2. Lalu perulangan while lainnya akan dijalankan selama stack tidak kosong, pada setiap iterasi index tertinggi stack diambil menggunakan method pop, nilai tersebut ditambahkan ke biner sebagai representasi biner. setelah perulangan selesai biner akan berisi nilai biner dari kode. selanjutnya variable biner akan di return.
+
+## Percobaan Percobaan 3: Konversi Notasi Infix ke Postfix
+
+### 7.2.1 Verifikasi Hasil Percobaan
+
+**Contoh verifikasi hasil percobaan**
+
+![alt text](image-8.png)
+
+**Hasil Program**
+
+![alt text](image-9.png)
+
+### 7.2.2 Pertanyaa
+
+1. Pada method derajat, mengapa return value beberapa case bernilai sama? Apabila return value diubah dengan nilai berbeda-beda setiap case-nya, apa yang terjadi?
+2. Jelaskan alur kerja method konversi!
+3. Pada method konversi, apa fungsi dari potongan kode berikut?
 
 ## 7.4 Latihan Praktikum
 
