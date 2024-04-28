@@ -97,10 +97,91 @@ Kelas : TI-1H
 
 ### 7.2.2 Pertanyaa
 
-1. Pada method derajat, mengapa return value beberapa case bernilai sama? Apabila return value diubah dengan nilai berbeda-beda setiap case-nya, apa yang terjadi?
-2. Jelaskan alur kerja method konversi!
-3. Pada method konversi, apa fungsi dari potongan kode berikut?
+1. Pada method derajat, mengapa return value beberapa case bernilai sama? Apabila return value diubah dengan nilai berbeda-beda setiap case-nya, apa yang terjadi?  
+
+        Beberapa case bernilai sama karena dalam operasi matematika memiliki prioritas tertentu, seperti perkalian dan pembagian didahulukan daripada pengurangan dan penjumlahan. Jika return value diubah dengan nilai yang berbeda, hasil dari notasi postfix nya juga akan berbeda.
+
+2. Jelaskan alur kerja method konversi!  
+
+        Pada setiap iterasi, fungsi  membaca semua karakter  ekspresi masukan q. 
+        Jika karakternya adalah operan, karakter tersebut ditambahkan ke  string yang dihasilkan p. 
+        Jika karakternya adalah tanda kurung terbuka, karakter tersebut akan dimasukkan ke dalam tumpukan. 
+        Jika karakternya adalah tanda kurung kanan, semua operator  akan dicetak ke tumpukan hingga  tanda kurung kiri yang sesuai ditemukan.
+        Jika karakternya adalah operator, operator dengan tingkat prioritas yang sama atau lebih tinggi akan dicetak pada tumpukan. 
+        Hasil akhir postfix akan direturn.
+
+
+
+3. Pada method konversi, apa fungsi dari potongan kode berikut?  
+        ![alt text](image-10.png)  
+
+        kode tersebut digunakan untuk mengambil karakter dari variabel q pada indeks i dan meyimpannya dalam variabel c
 
 ## 7.4 Latihan Praktikum
 
+Perhatikan dan gunakan kembali kode program pada Percobaan 1. Tambahkan dua method berikut pada class Gudang:  
+
+![alt text](image-11.png)
+
+- Method lihatBarangTerbawah digunakan untuk mengecek barang pada tumpukan terbawah  
+
+```
+    public Barang13 lihatBarangTerbawah(){
+        if (!cekKosong()) {
+            Barang13 barangBawah = tumpukan[0];
+            System.out.println("Barang terbawah : " + barangBawah.nama);
+                    return barangBawah;
+        }else{
+            System.out.println("Tumpukan barang kosong");
+            return null;
+        }
+    }  
+```
+            
+![alt text](image-12.png)
+
+- Method cariBarang digunakan untuk mencari ada atau tidaknya barang berdasarkan kode barangnya atau nama barangnya
+
+```
+    public void cariKode(int kd) {
+        int a = -1;
+        for (int i = 0; i < tumpukan.length; i++) {
+            if (kd == tumpukan[i].kode) {
+                a = i;
+                break;
+            }
+        }
+        if (a == -1) {
+            System.out.println("Gaada");
+        } else {
+            System.out.println("Detail informasi dari kode barang " + kd);
+            System.out.println("Nama barang: " + tumpukan[a].nama);
+            System.out.println("Kategori barang: " + tumpukan[a].kategori);
+        }
+
+    }
+```  
+
+![alt text](image-13.png)  
+
+```
+    public void cariNama(String cari) {
+        int a = -1;
+        for (int i = 0; i < tumpukan.length; i++) {
+            if (cari.equalsIgnoreCase(tumpukan[i].nama)) {
+                a = i;
+                break;
+            }
+        }
+        if (a == -1) {
+            System.out.println("Gaada");
+        } else {
+            System.out.println("Detail informasi dari kode barang " + cari);
+            System.out.println("Kode barang: " + tumpukan[a].kode);
+            System.out.println("Kategori barang: " + tumpukan[a].kategori);
+        }
+    }
+
+```  
+![alt text](image-14.png)
 
