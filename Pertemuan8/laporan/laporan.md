@@ -16,11 +16,13 @@ Kelas : TI-1H
 
 **Hasil Program**
 
-![alt text](image-2.png) ![alt text](image-3.png)  
+![alt text](image-15.png) ![alt text](image-16.png)  
 
-![alt text](image-4.png)  
+![alt text](image-17.png)  
 
-![alt text](image-5.png)
+![alt text](image-18.png)  
+
+![alt text](image-19.png)
 
 
 ### 7.1.2 Pertanyaan
@@ -31,7 +33,7 @@ Kelas : TI-1H
         
         kode method lihatBarangTeratas(). Seharusnya pada baris kedua bukan if (!isEmpty()), tapi if (!cekKosong())
 
-        dan public void tampilkanBarang(). Seharusnya pada baris kelima bukan  for (int i = 0; i < top; i++), tapi  for (int i = 0; i < top+1; i++)
+        dan public void tampilkanBarang(). Seharusnya pada baris kelima bukan  for (int i = 0; i < top; i++), tapi  for (int i = top; i >=0; i--)
 
 
 2. Berapa banyak data barang yang dapat ditampung di dalam tumpukan? Tunjukkan potongan kode programnya!
