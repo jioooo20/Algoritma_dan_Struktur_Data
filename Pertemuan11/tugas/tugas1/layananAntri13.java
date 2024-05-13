@@ -1,4 +1,4 @@
-package Pertemuan11.tugas;
+package Pertemuan11.tugas.tugas1;
 
 public class layananAntri13 {
     public int nim;

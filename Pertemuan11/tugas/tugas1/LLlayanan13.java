@@ -1,4 +1,4 @@
-package Pertemuan11.tugas;
+package Pertemuan11.tugas.tugas1;
 
 public class LLlayanan13 {
     layananAntri13 head, tail;

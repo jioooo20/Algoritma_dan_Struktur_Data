@@ -1,4 +1,4 @@
-package Pertemuan11.tugas;
+package Pertemuan11.tugas.tugas1;
 
 public class layananMHS13 {
     public static void main(String[] args) {
