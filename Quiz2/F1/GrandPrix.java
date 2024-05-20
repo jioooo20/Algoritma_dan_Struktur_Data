@@ -210,7 +210,7 @@ public class GrandPrix {
         Driver GPMiami_Yuki_Tsunoda = new Driver(9, "Yuki Tsunoda", GPEmiliaRomagna_Yuki_Tsunoda.getPoin(), 12);
         Driver GPMiami_Lance_Stroll = new Driver(10, "Lance Stroll", GPEmiliaRomagna_Lance_Stroll.getPoin(), 10);
         Driver GPMiami_Fernando_Alonso = new Driver(11, "Fernando Alonso", GPEmiliaRomagna_Fernando_Alonso.getPoin(), 11);
-        Driver GPMiami_George_Russell = new Driver(12, "George Russell", GPEmiliaRomagna_Sebastian_Vettel.getPoin(), 5);
+        Driver GPMiami_George_Russell = new Driver(12, "George Russell", GPEmiliaRomagna_George_Russell.getPoin(), 5);
         Driver GPMiami_Sebastian_Vettel = new Driver(13, "Sebastian Vettel", GPEmiliaRomagna_Sebastian_Vettel.getPoin(), 17);
         Driver GPMiami_Daniel_Ricciardo = new Driver(14, "Daniel Ricciardo", GPEmiliaRomagna_Daniel_Ricciardo.getPoin(), 13);
         Driver GPMiami_Mick_Schumacher = new Driver(15, "Mick Schumacher", GPEmiliaRomagna_Mick_Schumacher.getPoin(), 15);
@@ -663,20 +663,20 @@ public class GrandPrix {
         Driver GPNetherlands_Lewis_Hamilton = new Driver(4, "Lewis Hamilton", GPBelgium_Lewis_Hamilton.getPoin(), 4);
         Driver GPNetherlands_Sergio_Perez = new Driver(5, "Sergio Perez", GPBelgium_Sergio_Perez.getPoin(), 5);
         Driver GPNetherlands_George_Russell = new Driver(6, "George Russell", GPBelgium_George_Russell.getPoin(), 2);
-        Driver GPNetherlands_Lando_Norris = new Driver(7, "Lando Norris", 0, 7);
-        Driver GPNetherlands_Mick_Schumacher = new Driver(8, "Mick Schumacher", 0, 13);
-        Driver GPNetherlands_Yuki_Tsunoda = new Driver(9, "Yuki Tsunoda", 0, 0);
-        Driver GPNetherlands_Lance_Stroll = new Driver(10, "Lance Stroll", 0, 10);
-        Driver GPNetherlands_Pierre_Gasly = new Driver(11, "Pierre Gasly", 0, 11);
-        Driver GPNetherlands_Esteban_Ocon = new Driver(12, "Esteban Ocon", 0, 9);
-        Driver GPNetherlands_Fernando_Alonso = new Driver(13, "Fernando Alonso", 0, 6);
-        Driver GPNetherlands_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", 0, 16);
-        Driver GPNetherlands_Alexander_Albon = new Driver(15, "Alexander Albon", 0, 12);
-        Driver GPNetherlands_Valtteri_Bottas = new Driver(16, "Valtteri Bottas", 0, 0);
-        Driver GPNetherlands_Daniel_Ricciardo = new Driver(17, "Daniel Ricciardo", 0, 17);
-        Driver GPNetherlands_Kevin_Magnussen = new Driver(18, "Kevin Magnussen", 0, 15);
-        Driver GPNetherlands_Sebastian_Vettel = new Driver(19, "Sebastian Vettel", 0, 5);
-        Driver GPNetherlands_Nicholas_Latifi = new Driver(20, "Nicholas Latifi", 0, 18);
+        Driver GPNetherlands_Lando_Norris = new Driver(7, "Lando Norris", GPBelgium_Lando_Norris.getPoin(), 7);
+        Driver GPNetherlands_Mick_Schumacher = new Driver(8, "Mick Schumacher", GPBelgium_Mick_Schumacher.getPoin(), 13);
+        Driver GPNetherlands_Yuki_Tsunoda = new Driver(9, "Yuki Tsunoda", GPBelgium_Yuki_Tsunoda.getPoin(), 0);
+        Driver GPNetherlands_Lance_Stroll = new Driver(10, "Lance Stroll", GPBelgium_Lance_Stroll.getPoin(), 10);
+        Driver GPNetherlands_Pierre_Gasly = new Driver(11, "Pierre Gasly", GPBelgium_Pierre_Gasly.getPoin(), 11);
+        Driver GPNetherlands_Esteban_Ocon = new Driver(12, "Esteban Ocon", GPBelgium_Esteban_Ocon.getPoin(), 9);
+        Driver GPNetherlands_Fernando_Alonso = new Driver(13, "Fernando Alonso", GPBelgium_Fernando_Alonso.getPoin(), 6);
+        Driver GPNetherlands_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", GPBelgium_Zhou_Guanyu.getPoin(), 16);
+        Driver GPNetherlands_Alexander_Albon = new Driver(15, "Alexander Albon", GPBelgium_Alexander_Albon.getPoin(), 12);
+        Driver GPNetherlands_Valtteri_Bottas = new Driver(16, "Valtteri Bottas", GPBelgium_Valtteri_Bottas.getPoin(), 0);
+        Driver GPNetherlands_Daniel_Ricciardo = new Driver(17, "Daniel Ricciardo", GPBelgium_Daniel_Ricciardo.getPoin(), 17);
+        Driver GPNetherlands_Kevin_Magnussen = new Driver(18, "Kevin Magnussen", GPBelgium_Kevin_Magnussen.getPoin(), 15);
+        Driver GPNetherlands_Sebastian_Vettel = new Driver(19, "Sebastian Vettel", GPBelgium_Sebastian_Vettel.getPoin(), 5);
+        Driver GPNetherlands_Nicholas_Latifi = new Driver(20, "Nicholas Latifi", GPBelgium_Nicholas_Latifi.getPoin(), 18);
 
         GPNetherlands_Max_Verstappen.BonusFastestLaps();
         GPNetherlands.add(GPNetherlands_Max_Verstappen);
@@ -703,26 +703,26 @@ public class GrandPrix {
         Klasemen GPItaly = new Klasemen();
         GPItaly.addTanggal("11 Sep 2022");
 
-        Driver GPItaly_Charles_Leclerc = new Driver(1, "Charles Leclerc", 0, 2);
-        Driver GPItaly_George_Russell = new Driver(2, "George Russell", 0, 3);
-        Driver GPItaly_Lando_Norris = new Driver(3, "Lando Norris", 0, 7);
-        Driver GPItaly_Daniel_Ricciardo = new Driver(4, "Daniel Ricciardo", 0, 0);
-        Driver GPItaly_Pierre_Gasly = new Driver(5, "Pierre Gasly", 0, 8);
-        Driver GPItaly_Fernando_Alonso = new Driver(6, "Fernando Alonso", 0, 0);
-        Driver GPItaly_Max_Verstappen = new Driver(7, "Max Verstappen", 0, 1);
-        Driver GPItaly_Nyck_De_Vries = new Driver(8, "Nyck De Vries", 0, 9);
-        Driver GPItaly_Zhou_Guanyu = new Driver(9, "Zhou Guanyu", 0, 10);
-        Driver GPItaly_Nicholas_Latifi = new Driver(10, "Nicholas Latifi", 0, 15);
-        Driver GPItaly_Sebastian_Vettel = new Driver(11, "Sebastian Vettel", 0, 0);
-        Driver GPItaly_Lance_Stroll = new Driver(12, "Lance Stroll", 0, 0);
-        Driver GPItaly_Sergio_Perez = new Driver(13, "Sergio Perez", 0, 6);
-        Driver GPItaly_Esteban_Ocon = new Driver(14, "Esteban Ocon", 0, 11);
-        Driver GPItaly_Valtteri_Bottas = new Driver(15, "Valtteri Bottas", 0, 13);
-        Driver GPItaly_Kevin_Magnussen = new Driver(16, "Kevin Magnussen", 0, 16);
-        Driver GPItaly_Mick_Schumacher = new Driver(17, "Mick Schumacher", 0, 12);
-        Driver GPItaly_Carlos_Sainz = new Driver(18, "Carlos Sainz", 0, 4);
-        Driver GPItaly_Lewis_Hamilton = new Driver(19, "Lewis Hamilton", 0, 5);
-        Driver GPItaly_Yuki_Tsunoda = new Driver(20, "Yuki Tsunoda", 0, 14);
+        Driver GPItaly_Charles_Leclerc = new Driver(1, "Charles Leclerc", GPNetherlands_Charles_Leclerc.getPoin(), 2);
+        Driver GPItaly_George_Russell = new Driver(2, "George Russell", GPNetherlands_George_Russell.getPoin(), 3);
+        Driver GPItaly_Lando_Norris = new Driver(3, "Lando Norris", GPNetherlands_Lando_Norris.getPoin(), 7);
+        Driver GPItaly_Daniel_Ricciardo = new Driver(4, "Daniel Ricciardo", GPNetherlands_Daniel_Ricciardo.getPoin(), 0);
+        Driver GPItaly_Pierre_Gasly = new Driver(5, "Pierre Gasly", GPNetherlands_Pierre_Gasly.getPoin(), 8);
+        Driver GPItaly_Fernando_Alonso = new Driver(6, "Fernando Alonso", GPNetherlands_Fernando_Alonso.getPoin(), 0);
+        Driver GPItaly_Max_Verstappen = new Driver(7, "Max Verstappen", GPNetherlands_Max_Verstappen.getPoin(), 1);
+        Driver GPItaly_Nyck_De_Vries = new Driver(8, "Nyck De Vries", 0, 9); // anyaran jir, main gur pisan
+        Driver GPItaly_Zhou_Guanyu = new Driver(9, "Zhou Guanyu", GPNetherlands_Zhou_Guanyu.getPoin(), 10);
+        Driver GPItaly_Nicholas_Latifi = new Driver(10, "Nicholas Latifi", GPNetherlands_Nicholas_Latifi.getPoin(), 15);
+        Driver GPItaly_Sebastian_Vettel = new Driver(11, "Sebastian Vettel", GPNetherlands_Sebastian_Vettel.getPoin(), 0);
+        Driver GPItaly_Lance_Stroll = new Driver(12, "Lance Stroll", GPNetherlands_Lance_Stroll.getPoin(), 0);
+        Driver GPItaly_Sergio_Perez = new Driver(13, "Sergio Perez", GPNetherlands_Sergio_Perez.getPoin(), 6);
+        Driver GPItaly_Esteban_Ocon = new Driver(14, "Esteban Ocon", GPNetherlands_Esteban_Ocon.getPoin(), 11);
+        Driver GPItaly_Valtteri_Bottas = new Driver(15, "Valtteri Bottas", GPNetherlands_Valtteri_Bottas.getPoin(), 13);
+        Driver GPItaly_Kevin_Magnussen = new Driver(16, "Kevin Magnussen", GPNetherlands_Kevin_Magnussen.getPoin(), 16);
+        Driver GPItaly_Mick_Schumacher = new Driver(17, "Mick Schumacher", GPNetherlands_Mick_Schumacher.getPoin(), 12);
+        Driver GPItaly_Carlos_Sainz = new Driver(18, "Carlos Sainz", GPNetherlands_Carlos_Sainz.getPoin(), 4);
+        Driver GPItaly_Lewis_Hamilton = new Driver(19, "Lewis Hamilton", GPNetherlands_Lewis_Hamilton.getPoin(), 5);
+        Driver GPItaly_Yuki_Tsunoda = new Driver(20, "Yuki Tsunoda", GPNetherlands_Yuki_Tsunoda.getPoin(), 14);
 
         GPItaly_Sergio_Perez.BonusFastestLaps();
         GPItaly.add(GPItaly_Charles_Leclerc);
@@ -749,26 +749,26 @@ public class GrandPrix {
         Klasemen GPSingapore = new Klasemen();
         GPSingapore.addTanggal("02 Oct 2022");
 
-        Driver GPSingapore_Charles_Leclerc = new Driver(1, "Charles Leclerc", 0, 2);
-        Driver GPSingapore_Sergio_Perez = new Driver(2, "Sergio Perez", 0, 1);
-        Driver GPSingapore_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", 0, 9);
-        Driver GPSingapore_Carlos_Sainz = new Driver(4, "Carlos Sainz", 0, 3);
-        Driver GPSingapore_Fernando_Alonso = new Driver(5, "Fernando Alonso", 0, 0);
-        Driver GPSingapore_Lando_Norris = new Driver(6, "Lando Norris", 0, 4);
-        Driver GPSingapore_Pierre_Gasly = new Driver(7, "Pierre Gasly", 0, 10);
-        Driver GPSingapore_Max_Verstappen = new Driver(8, "Max Verstappen", 0, 7);
-        Driver GPSingapore_Kevin_Magnussen = new Driver(9, "Kevin Magnussen", 0, 12);
-        Driver GPSingapore_Yuki_Tsunoda = new Driver(10, "Yuki Tsunoda", 0, 0);
-        Driver GPSingapore_Lance_Stroll = new Driver(11, "Lance Stroll", 0, 6);
-        Driver GPSingapore_Mick_Schumacher = new Driver(12, "Mick Schumacher", 0, 13);
-        Driver GPSingapore_Sebastian_Vettel = new Driver(13, "Sebastian Vettel", 0, 8);
-        Driver GPSingapore_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", 0, 0);
-        Driver GPSingapore_Valtteri_Bottas = new Driver(15, "Valtteri Bottas", 0, 11);
-        Driver GPSingapore_Daniel_Ricciardo = new Driver(16, "Daniel Ricciardo", 0, 5);
-        Driver GPSingapore_Esteban_Ocon = new Driver(17, "Esteban Ocon", 0, 0);
-        Driver GPSingapore_Alexander_Albon = new Driver(18, "Alexander Albon", 0, 0);
-        Driver GPSingapore_Nicholas_Latifi = new Driver(19, "Nicholas Latifi", 0, 0);
-        Driver GPSingapore_George_Russell = new Driver(20, "George Russell", 0, 14);
+        Driver GPSingapore_Charles_Leclerc = new Driver(1, "Charles Leclerc", GPItaly_Charles_Leclerc.getPoin(), 2);
+        Driver GPSingapore_Sergio_Perez = new Driver(2, "Sergio Perez", GPItaly_Sergio_Perez.getPoin(), 1);
+        Driver GPSingapore_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", GPItaly_Lewis_Hamilton.getPoin(), 9);
+        Driver GPSingapore_Carlos_Sainz = new Driver(4, "Carlos Sainz", GPItaly_Carlos_Sainz.getPoin(), 3);
+        Driver GPSingapore_Fernando_Alonso = new Driver(5, "Fernando Alonso", GPItaly_Fernando_Alonso.getPoin(), 0);
+        Driver GPSingapore_Lando_Norris = new Driver(6, "Lando Norris", GPItaly_Lando_Norris.getPoin(), 4);
+        Driver GPSingapore_Pierre_Gasly = new Driver(7, "Pierre Gasly", GPItaly_Pierre_Gasly.getPoin(), 10);
+        Driver GPSingapore_Max_Verstappen = new Driver(8, "Max Verstappen", GPItaly_Max_Verstappen.getPoin(), 7);
+        Driver GPSingapore_Kevin_Magnussen = new Driver(9, "Kevin Magnussen", GPItaly_Kevin_Magnussen.getPoin(), 12);
+        Driver GPSingapore_Yuki_Tsunoda = new Driver(10, "Yuki Tsunoda", GPItaly_Yuki_Tsunoda.getPoin(), 0);
+        Driver GPSingapore_Lance_Stroll = new Driver(11, "Lance Stroll", GPItaly_Lance_Stroll.getPoin(), 6);
+        Driver GPSingapore_Mick_Schumacher = new Driver(12, "Mick Schumacher", GPItaly_Mick_Schumacher.getPoin(), 13);
+        Driver GPSingapore_Sebastian_Vettel = new Driver(13, "Sebastian Vettel", GPItaly_Sebastian_Vettel.getPoin(), 8);
+        Driver GPSingapore_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", GPItaly_Zhou_Guanyu.getPoin(), 0);
+        Driver GPSingapore_Valtteri_Bottas = new Driver(15, "Valtteri Bottas", GPItaly_Valtteri_Bottas.getPoin(), 11);
+        Driver GPSingapore_Daniel_Ricciardo = new Driver(16, "Daniel Ricciardo", GPItaly_Daniel_Ricciardo.getPoin(), 5);
+        Driver GPSingapore_Esteban_Ocon = new Driver(17, "Esteban Ocon", GPItaly_Esteban_Ocon.getPoin(), 0);
+        Driver GPSingapore_Alexander_Albon = new Driver(18, "Alexander Albon", GPNetherlands_Alexander_Albon.getPoin(), 0);
+        Driver GPSingapore_Nicholas_Latifi = new Driver(19, "Nicholas Latifi", GPItaly_Nicholas_Latifi.getPoin(), 0);
+        Driver GPSingapore_George_Russell = new Driver(20, "George Russell", GPItaly_George_Russell.getPoin(), 14);
 
         GPSingapore.add(GPSingapore_Charles_Leclerc);
         GPSingapore.add(GPSingapore_Sergio_Perez);
@@ -794,25 +794,25 @@ public class GrandPrix {
         Klasemen GPJapan = new Klasemen();
         GPJapan.addTanggal("09 Oct 2022");
 
-        Driver GPJapan_Max_Verstappen = new Driver(1, "Max Verstappen", 0, 1);
-        Driver GPJapan_Charles_Leclerc = new Driver(2, "Charles Leclerc", 0, 3);
-        Driver GPJapan_Carlos_Sainz = new Driver(3, "Carlos Sainz", 0, 0);
-        Driver GPJapan_Sergio_Perez = new Driver(4, "Sergio Perez", 0, 2);
-        Driver GPJapan_Esteban_Ocon = new Driver(5, "Esteban Ocon", 0, 4);
-        Driver GPJapan_Lewis_Hamilton = new Driver(6, "Lewis Hamilton", 0, 5);
-        Driver GPJapan_Fernando_Alonso = new Driver(7, "Fernando Alonso", 0, 7);
-        Driver GPJapan_George_Russell = new Driver(8, "George Russell", 0, 8);
-        Driver GPJapan_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", 0, 6);
-        Driver GPJapan_Lando_Norris = new Driver(10, "Lando Norris", 0, 10);
-        Driver GPJapan_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", 0, 11);
-        Driver GPJapan_Valtteri_Bottas = new Driver(12, "Valtteri Bottas", 0, 15);
-        Driver GPJapan_Yuki_Tsunoda = new Driver(13, "Yuki Tsunoda", 0, 13);
-        Driver GPJapan_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", 0, 16);
-        Driver GPJapan_Mick_Schumacher = new Driver(15, "Mick Schumacher", 0, 17);
-        Driver GPJapan_Alexander_Albon = new Driver(16, "Alexander Albon", 0, 0);
-        Driver GPJapan_Kevin_Magnussen = new Driver(17, "Kevin Magnussen", 0, 14);
-        Driver GPJapan_Lance_Stroll = new Driver(18, "Lance Stroll", 0, 12);
-        Driver GPJapan_Nicholas_Latifi = new Driver(19, "Nicholas Latifi", 0, 9);
+        Driver GPJapan_Max_Verstappen = new Driver(1, "Max Verstappen", GPSingapore_Max_Verstappen.getPoin(), 1);
+        Driver GPJapan_Charles_Leclerc = new Driver(2, "Charles Leclerc", GPSingapore_Charles_Leclerc.getPoin(), 3);
+        Driver GPJapan_Carlos_Sainz = new Driver(3, "Carlos Sainz", GPSingapore_Carlos_Sainz.getPoin(), 0);
+        Driver GPJapan_Sergio_Perez = new Driver(4, "Sergio Perez", GPSingapore_Sergio_Perez.getPoin(), 2);
+        Driver GPJapan_Esteban_Ocon = new Driver(5, "Esteban Ocon", GPSingapore_Esteban_Ocon.getPoin(), 4);
+        Driver GPJapan_Lewis_Hamilton = new Driver(6, "Lewis Hamilton", GPSingapore_Lewis_Hamilton.getPoin(), 5);
+        Driver GPJapan_Fernando_Alonso = new Driver(7, "Fernando Alonso", GPSingapore_Fernando_Alonso.getPoin(), 7);
+        Driver GPJapan_George_Russell = new Driver(8, "George Russell", GPSingapore_George_Russell.getPoin(), 8);
+        Driver GPJapan_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", GPSingapore_Sebastian_Vettel.getPoin(), 6);
+        Driver GPJapan_Lando_Norris = new Driver(10, "Lando Norris", GPSingapore_Lando_Norris.getPoin(), 10);
+        Driver GPJapan_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", GPSingapore_Daniel_Ricciardo.getPoin(), 11);
+        Driver GPJapan_Valtteri_Bottas = new Driver(12, "Valtteri Bottas", GPSingapore_Valtteri_Bottas.getPoin(), 15);
+        Driver GPJapan_Yuki_Tsunoda = new Driver(13, "Yuki Tsunoda", GPSingapore_Yuki_Tsunoda.getPoin(), 13);
+        Driver GPJapan_Zhou_Guanyu = new Driver(14, "Zhou Guanyu", GPSingapore_Zhou_Guanyu.getPoin(), 16);
+        Driver GPJapan_Mick_Schumacher = new Driver(15, "Mick Schumacher", GPSingapore_Zhou_Guanyu.getPoin(), 17);
+        Driver GPJapan_Alexander_Albon = new Driver(16, "Alexander Albon", GPSingapore_Alexander_Albon.getPoin(), 0);
+        Driver GPJapan_Kevin_Magnussen = new Driver(17, "Kevin Magnussen", GPSingapore_Kevin_Magnussen.getPoin(), 14);
+        Driver GPJapan_Lance_Stroll = new Driver(18, "Lance Stroll", GPSingapore_Lance_Stroll.getPoin(), 12);
+        Driver GPJapan_Nicholas_Latifi = new Driver(19, "Nicholas Latifi", GPSingapore_Nicholas_Latifi.getPoin(), 9);
 
         GPJapan.add(GPJapan_Max_Verstappen);
         GPJapan.add(GPJapan_Charles_Leclerc);
@@ -837,26 +837,26 @@ public class GrandPrix {
         Klasemen GPUnitedStates = new Klasemen();
         GPUnitedStates.addTanggal("23 Oct 2022");
 
-        Driver GPUnitedStates_Carlos_Sainz = new Driver(1, "Carlos Sainz", 0, 0);
-        Driver GPUnitedStates_Max_Verstappen = new Driver(2, "Max Verstappen", 0, 1);
-        Driver GPUnitedStates_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", 0, 2);
-        Driver GPUnitedStates_George_Russell = new Driver(4, "George Russell", 0, 5);
-        Driver GPUnitedStates_Lance_Stroll = new Driver(5, "Lance Stroll", 0, 0);
-        Driver GPUnitedStates_Lando_Norris = new Driver(6, "Lando Norris", 0, 6);
-        Driver GPUnitedStates_Valtteri_Bottas = new Driver(7, "Valtteri Bottas", 0, 0);
-        Driver GPUnitedStates_Alexander_Albon = new Driver(8, "Alexander Albon", 0, 13);
-        Driver GPUnitedStates_Sergio_Perez = new Driver(9, "Sergio Perez", 0, 4);
-        Driver GPUnitedStates_Sebastian_Vettel = new Driver(10, "Sebastian Vettel", 0, 8);
-        Driver GPUnitedStates_Pierre_Gasly = new Driver(11, "Pierre Gasly", 0, 14);
-        Driver GPUnitedStates_Charles_Leclerc = new Driver(12, "Charles Leclerc", 0, 3);
-        Driver GPUnitedStates_Kevin_Magnussen = new Driver(13, "Kevin Magnussen", 0, 9);
-        Driver GPUnitedStates_Fernando_Alonso = new Driver(14, "Fernando Alonso", 0, 7);
-        Driver GPUnitedStates_Daniel_Ricciardo = new Driver(15, "Daniel Ricciardo", 0, 17);
-        Driver GPUnitedStates_Mick_Schumacher = new Driver(16, "Mick Schumacher", 0, 15);
-        Driver GPUnitedStates_Nicholas_Latifi = new Driver(17, "Nicholas Latifi", 0, 17);
-        Driver GPUnitedStates_Zhou_Guanyu = new Driver(18, "Zhou Guanyu", 0, 12);
-        Driver GPUnitedStates_Yuki_Tsunoda = new Driver(19, "Yuki Tsunoda", 0, 10);
-        Driver GPUnitedStates_Esteban_Ocon = new Driver(20, "Esteban Ocon", 0, 11);
+        Driver GPUnitedStates_Carlos_Sainz = new Driver(1, "Carlos Sainz", GPJapan_Carlos_Sainz.getPoin(), 0);
+        Driver GPUnitedStates_Max_Verstappen = new Driver(2, "Max Verstappen", GPJapan_Max_Verstappen.getPoin(), 1);
+        Driver GPUnitedStates_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", GPJapan_Lewis_Hamilton.getPoin(), 2);
+        Driver GPUnitedStates_George_Russell = new Driver(4, "George Russell", GPJapan_George_Russell.getPoin(), 5);
+        Driver GPUnitedStates_Lance_Stroll = new Driver(5, "Lance Stroll", GPJapan_Lance_Stroll.getPoin(), 0);
+        Driver GPUnitedStates_Lando_Norris = new Driver(6, "Lando Norris", GPJapan_Lando_Norris.getPoin(), 6);
+        Driver GPUnitedStates_Valtteri_Bottas = new Driver(7, "Valtteri Bottas", GPJapan_Valtteri_Bottas.getPoin(), 0);
+        Driver GPUnitedStates_Alexander_Albon = new Driver(8, "Alexander Albon", GPJapan_Alexander_Albon.getPoin(), 13);
+        Driver GPUnitedStates_Sergio_Perez = new Driver(9, "Sergio Perez", GPJapan_Sergio_Perez.getPoin(), 4);
+        Driver GPUnitedStates_Sebastian_Vettel = new Driver(10, "Sebastian Vettel", GPJapan_Sebastian_Vettel.getPoin(), 8);
+        Driver GPUnitedStates_Pierre_Gasly = new Driver(11, "Pierre Gasly", GPSingapore_Pierre_Gasly.getPoin(), 14);
+        Driver GPUnitedStates_Charles_Leclerc = new Driver(12, "Charles Leclerc", GPJapan_Charles_Leclerc.getPoin(), 3);
+        Driver GPUnitedStates_Kevin_Magnussen = new Driver(13, "Kevin Magnussen", GPJapan_Kevin_Magnussen.getPoin(), 9);
+        Driver GPUnitedStates_Fernando_Alonso = new Driver(14, "Fernando Alonso", GPJapan_Fernando_Alonso.getPoin(), 7);
+        Driver GPUnitedStates_Daniel_Ricciardo = new Driver(15, "Daniel Ricciardo", GPJapan_Daniel_Ricciardo.getPoin(), 17);
+        Driver GPUnitedStates_Mick_Schumacher = new Driver(16, "Mick Schumacher", GPJapan_Mick_Schumacher.getPoin(), 15);
+        Driver GPUnitedStates_Nicholas_Latifi = new Driver(17, "Nicholas Latifi", GPJapan_Nicholas_Latifi.getPoin(), 17);
+        Driver GPUnitedStates_Zhou_Guanyu = new Driver(18, "Zhou Guanyu", GPJapan_Zhou_Guanyu.getPoin(), 12);
+        Driver GPUnitedStates_Yuki_Tsunoda = new Driver(19, "Yuki Tsunoda", GPJapan_Yuki_Tsunoda.getPoin(), 10);
+        Driver GPUnitedStates_Esteban_Ocon = new Driver(20, "Esteban Ocon", GPJapan_Esteban_Ocon.getPoin(), 11);
 
         GPUnitedStates_George_Russell.BonusFastestLaps();
         GPUnitedStates.add(GPUnitedStates_Carlos_Sainz);
@@ -883,26 +883,26 @@ public class GrandPrix {
         Klasemen GPMexico = new Klasemen();
         GPMexico.addTanggal("30 Oct 2022");
 
-        Driver GPMexico_Max_Verstappen = new Driver(1, "Max Verstappen", 0, 1);
-        Driver GPMexico_George_Russell = new Driver(2, "George Russell", 0, 4);
-        Driver GPMexico_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", 0, 2);
-        Driver GPMexico_Sergio_Perez = new Driver(4, "Sergio Perez", 0, 3);
-        Driver GPMexico_Carlos_Sainz = new Driver(5, "Carlos Sainz", 0, 5);
-        Driver GPMexico_Valtteri_Bottas = new Driver(6, "Valtteri Bottas", 0, 10);
-        Driver GPMexico_Charles_Leclerc = new Driver(7, "Charles Leclerc", 0, 6);
-        Driver GPMexico_Lando_Norris = new Driver(8, "Lando Norris", 0, 9);
-        Driver GPMexico_Fernando_Alonso = new Driver(9, "Fernando Alonso", 0, 19);
-        Driver GPMexico_Esteban_Ocon = new Driver(10, "Esteban Ocon", 0, 8);
-        Driver GPMexico_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", 0, 7);
-        Driver GPMexico_Zhou_Guanyu = new Driver(12, "Zhou Guanyu", 0, 13);
-        Driver GPMexico_Yuki_Tsunoda = new Driver(13, "Yuki Tsunoda", 0, 0);
-        Driver GPMexico_Pierre_Gasly = new Driver(14, "Pierre Gasly", 0, 11);
-        Driver GPMexico_Mick_Schumacher = new Driver(15, "Mick Schumacher", 0, 16);
-        Driver GPMexico_Sebastian_Vettel = new Driver(16, "Sebastian Vettel", 0, 14);
-        Driver GPMexico_Alexander_Albon = new Driver(17, "Alexander Albon", 0, 12);
-        Driver GPMexico_Nicholas_Latifi = new Driver(18, "Nicholas Latifi", 0, 18);
-        Driver GPMexico_Kevin_Magnussen = new Driver(19, "Kevin Magnussen", 0, 17);
-        Driver GPMexico_Lance_Stroll = new Driver(20, "Lance Stroll", 0, 15);
+        Driver GPMexico_Max_Verstappen = new Driver(1, "Max Verstappen", GPUnitedStates_Max_Verstappen.getPoin(), 1);
+        Driver GPMexico_George_Russell = new Driver(2, "George Russell", GPUnitedStates_George_Russell.getPoin(), 4);
+        Driver GPMexico_Lewis_Hamilton = new Driver(3, "Lewis Hamilton", GPUnitedStates_Lewis_Hamilton.getPoin(), 2);
+        Driver GPMexico_Sergio_Perez = new Driver(4, "Sergio Perez", GPUnitedStates_Sergio_Perez.getPoin(), 3);
+        Driver GPMexico_Carlos_Sainz = new Driver(5, "Carlos Sainz", GPUnitedStates_Carlos_Sainz.getPoin(), 5);
+        Driver GPMexico_Valtteri_Bottas = new Driver(6, "Valtteri Bottas", GPUnitedStates_Valtteri_Bottas.getPoin(), 10);
+        Driver GPMexico_Charles_Leclerc = new Driver(7, "Charles Leclerc", GPUnitedStates_Charles_Leclerc.getPoin(), 6);
+        Driver GPMexico_Lando_Norris = new Driver(8, "Lando Norris", GPUnitedStates_Lando_Norris.getPoin(), 9);
+        Driver GPMexico_Fernando_Alonso = new Driver(9, "Fernando Alonso", GPUnitedStates_Fernando_Alonso.getPoin(), 19);
+        Driver GPMexico_Esteban_Ocon = new Driver(10, "Esteban Ocon", GPUnitedStates_Esteban_Ocon.getPoin(), 8);
+        Driver GPMexico_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", GPUnitedStates_Daniel_Ricciardo.getPoin(), 7);
+        Driver GPMexico_Zhou_Guanyu = new Driver(12, "Zhou Guanyu", GPUnitedStates_Zhou_Guanyu.getPoin(), 13);
+        Driver GPMexico_Yuki_Tsunoda = new Driver(13, "Yuki Tsunoda", GPUnitedStates_Yuki_Tsunoda.getPoin(), 0);
+        Driver GPMexico_Pierre_Gasly = new Driver(14, "Pierre Gasly", GPUnitedStates_Pierre_Gasly.getPoin(), 11);
+        Driver GPMexico_Mick_Schumacher = new Driver(15, "Mick Schumacher", GPUnitedStates_Mick_Schumacher.getPoin(), 16);
+        Driver GPMexico_Sebastian_Vettel = new Driver(16, "Sebastian Vettel", GPUnitedStates_Sebastian_Vettel.getPoin(), 14);
+        Driver GPMexico_Alexander_Albon = new Driver(17, "Alexander Albon", GPUnitedStates_Alexander_Albon.getPoin(), 12);
+        Driver GPMexico_Nicholas_Latifi = new Driver(18, "Nicholas Latifi", GPUnitedStates_Nicholas_Latifi.getPoin(), 18);
+        Driver GPMexico_Kevin_Magnussen = new Driver(19, "Kevin Magnussen", GPUnitedStates_Kevin_Magnussen.getPoin(), 17);
+        Driver GPMexico_Lance_Stroll = new Driver(20, "Lance Stroll", GPUnitedStates_Lance_Stroll.getPoin(), 15);
 
         GPMexico_George_Russell.BonusFastestLaps();
         GPMexico.add(GPMexico_Max_Verstappen);
@@ -929,26 +929,26 @@ public class GrandPrix {
         Klasemen GPBrazil = new Klasemen();
         GPBrazil.addTanggal("13 Nov 2022");
 
-        Driver GPBrazil_George_Russell = new Driver(1, "George Russell", 0, 1);
-        Driver GPBrazil_Lewis_Hamilton = new Driver(2, "Lewis Hamilton", 0, 2);
-        Driver GPBrazil_Max_Verstappen = new Driver(3, "Max Verstappen", 0, 6);
-        Driver GPBrazil_Sergio_Perez = new Driver(4, "Sergio Perez", 0, 7);
-        Driver GPBrazil_Charles_Leclerc = new Driver(5, "Charles Leclerc", 0, 4);
-        Driver GPBrazil_Lando_Norris = new Driver(6, "Lando Norris", 0, 0);
-        Driver GPBrazil_Carlos_Sainz = new Driver(7, "Carlos Sainz", 0, 3);
-        Driver GPBrazil_Kevin_Magnussen = new Driver(8, "Kevin Magnussen", 0, 0);
-        Driver GPBrazil_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", 0, 11);
-        Driver GPBrazil_Pierre_Gasly = new Driver(10, "Pierre Gasly", 0, 14);
-        Driver GPBrazil_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", 0, 0);
-        Driver GPBrazil_Mick_Schumacher = new Driver(12, "Mick Schumacher", 0, 13);
-        Driver GPBrazil_Zhou_Guanyu = new Driver(13, "Zhou Guanyu", 0, 12);
-        Driver GPBrazil_Valtteri_Bottas = new Driver(14, "Valtteri Bottas", 0, 9);
-        Driver GPBrazil_Lance_Stroll = new Driver(15, "Lance Stroll", 0, 10);
-        Driver GPBrazil_Esteban_Ocon = new Driver(16, "Esteban Ocon", 0, 8);
-        Driver GPBrazil_Fernando_Alonso = new Driver(17, "Fernando Alonso", 0, 5);
-        Driver GPBrazil_Nicholas_Latifi = new Driver(18, "Nicholas Latifi", 0, 16);
-        Driver GPBrazil_Alexander_Albon = new Driver(19, "Alexander Albon", 0, 15);
-        Driver GPBrazil_Yuki_Tsunoda = new Driver(20, "Yuki Tsunoda", 0, 17);
+        Driver GPBrazil_George_Russell = new Driver(1, "George Russell", GPMexico_George_Russell.getPoin(), 1);
+        Driver GPBrazil_Lewis_Hamilton = new Driver(2, "Lewis Hamilton", GPMexico_Lewis_Hamilton.getPoin(), 2);
+        Driver GPBrazil_Max_Verstappen = new Driver(3, "Max Verstappen", GPMexico_Max_Verstappen.getPoin(), 6);
+        Driver GPBrazil_Sergio_Perez = new Driver(4, "Sergio Perez", GPMexico_Sergio_Perez.getPoin(), 7);
+        Driver GPBrazil_Charles_Leclerc = new Driver(5, "Charles Leclerc", GPMexico_Charles_Leclerc.getPoin(), 4);
+        Driver GPBrazil_Lando_Norris = new Driver(6, "Lando Norris", GPMexico_Lando_Norris.getPoin(), 0);
+        Driver GPBrazil_Carlos_Sainz = new Driver(7, "Carlos Sainz", GPMexico_Carlos_Sainz.getPoin(), 3);
+        Driver GPBrazil_Kevin_Magnussen = new Driver(8, "Kevin Magnussen", GPMexico_Kevin_Magnussen.getPoin(), 0);
+        Driver GPBrazil_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", GPMexico_Sebastian_Vettel.getPoin(), 11);
+        Driver GPBrazil_Pierre_Gasly = new Driver(10, "Pierre Gasly", GPMexico_Pierre_Gasly.getPoin(), 14);
+        Driver GPBrazil_Daniel_Ricciardo = new Driver(11, "Daniel Ricciardo", GPMexico_Daniel_Ricciardo.getPoin(), 0);
+        Driver GPBrazil_Mick_Schumacher = new Driver(12, "Mick Schumacher", GPMexico_Daniel_Ricciardo.getPoin(), 13);
+        Driver GPBrazil_Zhou_Guanyu = new Driver(13, "Zhou Guanyu", GPMexico_Zhou_Guanyu.getPoin(), 12);
+        Driver GPBrazil_Valtteri_Bottas = new Driver(14, "Valtteri Bottas", GPMexico_Valtteri_Bottas.getPoin(), 9);
+        Driver GPBrazil_Lance_Stroll = new Driver(15, "Lance Stroll", GPMexico_Lance_Stroll.getPoin(), 10);
+        Driver GPBrazil_Esteban_Ocon = new Driver(16, "Esteban Ocon", GPMexico_Esteban_Ocon.getPoin(), 8);
+        Driver GPBrazil_Fernando_Alonso = new Driver(17, "Fernando Alonso", GPMexico_Fernando_Alonso.getPoin(), 5);
+        Driver GPBrazil_Nicholas_Latifi = new Driver(18, "Nicholas Latifi", GPMexico_Nicholas_Latifi.getPoin(), 16);
+        Driver GPBrazil_Alexander_Albon = new Driver(19, "Alexander Albon", GPMexico_Alexander_Albon.getPoin(), 15);
+        Driver GPBrazil_Yuki_Tsunoda = new Driver(20, "Yuki Tsunoda", GPMexico_Yuki_Tsunoda.getPoin(), 17);
 
         GPBrazil_George_Russell.BonusFastestLaps();
         GPBrazil.add(GPBrazil_George_Russell);
@@ -975,26 +975,26 @@ public class GrandPrix {
         Klasemen GPAbuDhabi = new Klasemen();
         GPAbuDhabi.addTanggal("20 Nov 2022");
 
-        Driver GPAbuDhabi_Max_Verstappen = new Driver(1, "Max Verstappen", 0, 1);
-        Driver GPAbuDhabi_Sergio_Perez = new Driver(2, "Sergio Perez", 0, 3);
-        Driver GPAbuDhabi_Charles_Leclerc = new Driver(3, "Charles Leclerc", 0, 2);
-        Driver GPAbuDhabi_Carlos_Sainz = new Driver(4, "Carlos Sainz", 0, 4);
-        Driver GPAbuDhabi_Lewis_Hamilton = new Driver(5, "Lewis Hamilton", 0, 18);
-        Driver GPAbuDhabi_George_Russell = new Driver(6, "George Russell", 0, 5);
-        Driver GPAbuDhabi_Lando_Norris = new Driver(7, "Lando Norris", 0, 6);
-        Driver GPAbuDhabi_Esteban_Ocon = new Driver(8, "Esteban Ocon", 0, 7);
-        Driver GPAbuDhabi_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", 0, 10);
-        Driver GPAbuDhabi_Fernando_Alonso = new Driver(10, "Fernando Alonso", 0, 0);
-        Driver GPAbuDhabi_Yuki_Tsunoda = new Driver(11, "Yuki Tsunoda", 0, 11);
-        Driver GPAbuDhabi_Mick_Schumacher = new Driver(12, "Mick Schumacher", 0, 16);
-        Driver GPAbuDhabi_Daniel_Ricciardo = new Driver(13, "Daniel Ricciardo", 0, 8);
-        Driver GPAbuDhabi_Lance_Stroll = new Driver(14, "Lance Stroll", 0, 8);
-        Driver GPAbuDhabi_Zhou_Guanyu = new Driver(15, "Zhou Guanyu", 0, 12);
-        Driver GPAbuDhabi_Kevin_Magnussen = new Driver(16, "Kevin Magnussen", 0, 17);
-        Driver GPAbuDhabi_Pierre_Gasly = new Driver(17, "Pierre Gasly", 0, 14);
-        Driver GPAbuDhabi_Valtteri_Bottas = new Driver(18, "Valtteri Bottas", 0, 15);
-        Driver GPAbuDhabi_Alexander_Albon = new Driver(19, "Alexander Albon", 0, 13);
-        Driver GPAbuDhabi_Nicholas_Latifi = new Driver(20, "Nicholas Latifi", 0, 19);
+        Driver GPAbuDhabi_Max_Verstappen = new Driver(1, "Max Verstappen", GPBrazil_Max_Verstappen.getPoin(), 1);
+        Driver GPAbuDhabi_Sergio_Perez = new Driver(2, "Sergio Perez", GPBrazil_Sergio_Perez.getPoin(), 3);
+        Driver GPAbuDhabi_Charles_Leclerc = new Driver(3, "Charles Leclerc", GPBrazil_Charles_Leclerc.getPoin(), 2);
+        Driver GPAbuDhabi_Carlos_Sainz = new Driver(4, "Carlos Sainz", GPBrazil_Carlos_Sainz.getPoin(), 4);
+        Driver GPAbuDhabi_Lewis_Hamilton = new Driver(5, "Lewis Hamilton", GPBrazil_Lewis_Hamilton.getPoin(), 18);
+        Driver GPAbuDhabi_George_Russell = new Driver(6, "George Russell", GPBrazil_George_Russell.getPoin(), 5);
+        Driver GPAbuDhabi_Lando_Norris = new Driver(7, "Lando Norris", GPBrazil_Lando_Norris.getPoin(), 6);
+        Driver GPAbuDhabi_Esteban_Ocon = new Driver(8, "Esteban Ocon", GPBrazil_Esteban_Ocon.getPoin(), 7);
+        Driver GPAbuDhabi_Sebastian_Vettel = new Driver(9, "Sebastian Vettel", GPBrazil_Sebastian_Vettel.getPoin(), 10);
+        Driver GPAbuDhabi_Fernando_Alonso = new Driver(10, "Fernando Alonso", GPBrazil_Sebastian_Vettel.getPoin(), 0);
+        Driver GPAbuDhabi_Yuki_Tsunoda = new Driver(11, "Yuki Tsunoda", GPBrazil_Yuki_Tsunoda.getPoin(), 11);
+        Driver GPAbuDhabi_Mick_Schumacher = new Driver(12, "Mick Schumacher", GPBrazil_Mick_Schumacher.getPoin(), 16);
+        Driver GPAbuDhabi_Daniel_Ricciardo = new Driver(13, "Daniel Ricciardo", GPBrazil_Daniel_Ricciardo.getPoin(), 8);
+        Driver GPAbuDhabi_Lance_Stroll = new Driver(14, "Lance Stroll", GPBrazil_Lance_Stroll.getPoin(), 8);
+        Driver GPAbuDhabi_Zhou_Guanyu = new Driver(15, "Zhou Guanyu", GPBrazil_Zhou_Guanyu.getPoin(), 12);
+        Driver GPAbuDhabi_Kevin_Magnussen = new Driver(16, "Kevin Magnussen", GPBrazil_Kevin_Magnussen.getPoin(), 17);
+        Driver GPAbuDhabi_Pierre_Gasly = new Driver(17, "Pierre Gasly", GPBrazil_Pierre_Gasly.getPoin(), 14);
+        Driver GPAbuDhabi_Valtteri_Bottas = new Driver(18, "Valtteri Bottas", GPBrazil_Valtteri_Bottas.getPoin(), 15);
+        Driver GPAbuDhabi_Alexander_Albon = new Driver(19, "Alexander Albon", GPBrazil_Alexander_Albon.getPoin(), 13);
+        Driver GPAbuDhabi_Nicholas_Latifi = new Driver(20, "Nicholas Latifi", GPBrazil_Nicholas_Latifi.getPoin(), 19);
 
         GPAbuDhabi_Lando_Norris.BonusFastestLaps();
         GPAbuDhabi.add(GPAbuDhabi_Max_Verstappen);
@@ -1018,6 +1018,7 @@ public class GrandPrix {
         GPAbuDhabi.add(GPAbuDhabi_Alexander_Albon);
         GPAbuDhabi.add(GPAbuDhabi_Nicholas_Latifi);
 
+        System.out.println("\n");
         int menu = -1;
         while (menu != 0) {
             System.out.println("=====================================================");
@@ -1258,28 +1259,12 @@ public class GrandPrix {
                 System.out.println("=====================================================");
                 System.out.println("|         Final Result Grand Prix F1 2022           |");
                 System.out.println("=====================================================");
-                System.out.printf("| %-3s | %-31s | %-3s | %-3s |\n", "NO", "DRIVER", "PTS", "WIN");
+                System.out.printf("| %-3s | %-37s | %-3s |\n", "NO", "DRIVER", "PTS");
                 System.out.println("-----------------------------------------------------");
+                GPAbuDhabi.insertionSortDescPTS();
+                GPAbuDhabi.ResultFinal();
 
-                int Max_Verstapen = Klasemen.SumAllPts(GPBahrain_Max_Verstappen,GPArabSaudi_Max_Verstappen,GPAustralia_Max_Verstappen,GPEmiliaRomagna_Max_Verstappen,GPMiami_Max_Verstappen,GPSpain_Max_Verstappen,GPMonaco_Max_Verstappen,GPAzerbaijan_Max_Verstappen,GPCanada_Max_Verstappen,GPGreatBritanian_Max_Verstappen,GPAustria_Max_Verstappen,GPFrance_Max_Verstappen,GPHungary_Max_Verstappen,GPBelgium_Max_Verstappen,GPNetherlands_Max_Verstappen,GPItaly_Max_Verstappen,GPSingapore_Max_Verstappen,GPJapan_Max_Verstappen,GPUnitedStates_Max_Verstappen,GPMexico_Max_Verstappen,GPBrazil_Max_Verstappen,GPAbuDhabi_Max_Verstappen);
-
-                int Sergio_Perez = Klasemen.SumAllPts(GPBahrain_Sergio_Perez,GPArabSaudi_Sergio_Perez,GPAustralia_Sergio_Perez,GPEmiliaRomagna_Sergio_Perez,GPMiami_Sergio_Perez,GPSpain_Sergio_Perez,GPMonaco_Sergio_Perez,GPAzerbaijan_Sergio_Perez,GPCanada_Sergio_Perez,GPGreatBritanian_Sergio_Perez,GPAustria_Sergio_Perez,GPFrance_Sergio_Perez,GPHungary_Sergio_Perez,GPBelgium_Sergio_Perez,GPNetherlands_Sergio_Perez,GPItaly_Sergio_Perez,GPSingapore_Sergio_Perez,GPJapan_Sergio_Perez,GPUnitedStates_Sergio_Perez,GPMexico_Sergio_Perez,GPBrazil_Sergio_Perez,GPAbuDhabi_Sergio_Perez);
-
-                int Charles_Leclerc = Klasemen.SumAllPts(GPBahrain_Charles_Leclerc,GPArabSaudi_Charles_Leclerc,GPAustralia_Charles_Leclerc,GPEmiliaRomagna_Charles_Leclerc,GPMiami_Charles_Leclerc,GPSpain_Charles_Leclerc,GPMonaco_Charles_Leclerc,GPAzerbaijan_Charles_Leclerc,GPCanada_Charles_Leclerc,GPGreatBritanian_Charles_Leclerc,GPAustria_Charles_Leclerc,GPFrance_Charles_Leclerc,GPHungary_Charles_Leclerc,GPBelgium_Charles_Leclerc,GPNetherlands_Charles_Leclerc,GPItaly_Charles_Leclerc,GPSingapore_Charles_Leclerc,GPJapan_Charles_Leclerc,GPUnitedStates_Charles_Leclerc,GPMexico_Charles_Leclerc,GPBrazil_Charles_Leclerc,GPAbuDhabi_Charles_Leclerc);
                 
-                int Carlos_Sainz = Klasemen.SumAllPts(GPBahrain_Carlos_Sainz,GPArabSaudi_Carlos_Sainz,GPAustralia_Carlos_Sainz,GPEmiliaRomagna_Carlos_Sainz,GPMiami_Carlos_Sainz,GPSpain_Carlos_Sainz,GPMonaco_Carlos_Sainz,GPAzerbaijan_Carlos_Sainz,GPCanada_Carlos_Sainz,GPGreatBritanian_Carlos_Sainz,GPAustria_Carlos_Sainz,GPFrance_Carlos_Sainz,GPHungary_Carlos_Sainz,GPBelgium_Carlos_Sainz,GPNetherlands_Carlos_Sainz,GPItaly_Carlos_Sainz,GPSingapore_Carlos_Sainz,GPJapan_Carlos_Sainz,GPUnitedStates_Carlos_Sainz,GPMexico_Carlos_Sainz,GPBrazil_Carlos_Sainz,GPAbuDhabi_Carlos_Sainz);
-                
-                int Lewis_Hamilton = Klasemen.SumAllPts(GPBahrain_Lewis_Hamilton,GPArabSaudi_Lewis_Hamilton,GPAustralia_Lewis_Hamilton,GPEmiliaRomagna_Lewis_Hamilton,GPMiami_Lewis_Hamilton,GPSpain_Lewis_Hamilton,GPMonaco_Lewis_Hamilton,GPAzerbaijan_Lewis_Hamilton,GPCanada_Lewis_Hamilton,GPGreatBritanian_Lewis_Hamilton,GPAustria_Lewis_Hamilton,GPFrance_Lewis_Hamilton,GPHungary_Lewis_Hamilton,GPBelgium_Lewis_Hamilton,GPNetherlands_Lewis_Hamilton,GPItaly_Lewis_Hamilton,GPSingapore_Lewis_Hamilton,GPJapan_Lewis_Hamilton,GPUnitedStates_Lewis_Hamilton,GPMexico_Lewis_Hamilton,GPBrazil_Lewis_Hamilton,GPAbuDhabi_Lewis_Hamilton);
-
-                int George_Russell= Klasemen.SumAllPts(GPBahrain_George_Russell,GPArabSaudi_George_Russell,GPAustralia_George_Russell,GPEmiliaRomagna_George_Russell,GPMiami_George_Russell,GPSpain_George_Russell,GPMonaco_George_Russell,GPAzerbaijan_George_Russell,GPCanada_George_Russell,GPGreatBritanian_George_Russell,GPAustria_George_Russell,GPFrance_George_Russell,GPHungary_George_Russell,GPBelgium_George_Russell,GPNetherlands_George_Russell,GPItaly_George_Russell,GPSingapore_George_Russell,GPJapan_George_Russell,GPUnitedStates_George_Russell,GPMexico_George_Russell,GPBrazil_George_Russell,GPAbuDhabi_George_Russell);
-
-                int Lando_Norris = Klasemen.SumAllPts(GPBahrain_Lando_Norris,GPArabSaudi_Lando_Norris,GPAustralia_Lando_Norris,GPEmiliaRomagna_Lando_Norris,GPMiami_Lando_Norris,GPSpain_Lando_Norris,GPMonaco_Lando_Norris,GPAzerbaijan_Lando_Norris,GPCanada_Lando_Norris,GPGreatBritanian_Lando_Norris,GPAustria_Lando_Norris,GPFrance_Lando_Norris,GPHungary_Lando_Norris,GPBelgium_Lando_Norris,GPNetherlands_Lando_Norris,GPItaly_Lando_Norris,GPSingapore_Lando_Norris,GPJapan_Lando_Norris,GPUnitedStates_Lando_Norris,GPMexico_Lando_Norris,GPBrazil_Lando_Norris,GPAbuDhabi_Lando_Norris);
-
-                int Esteban_Ocon = Klasemen.SumAllPts(GPBahrain_Esteban_Ocon,GPArabSaudi_Esteban_Ocon,GPAustralia_Esteban_Ocon,GPEmiliaRomagna_Esteban_Ocon,GPMiami_Esteban_Ocon,GPSpain_Esteban_Ocon,GPMonaco_Esteban_Ocon,GPAzerbaijan_Esteban_Ocon,GPCanada_Esteban_Ocon,GPGreatBritanian_Esteban_Ocon,GPAustria_Esteban_Ocon,GPFrance_Esteban_Ocon,GPHungary_Esteban_Ocon,GPBelgium_Esteban_Ocon,GPNetherlands_Esteban_Ocon,GPItaly_Esteban_Ocon,GPSingapore_Esteban_Ocon,GPJapan_Esteban_Ocon,GPUnitedStates_Esteban_Ocon,GPMexico_Esteban_Ocon,GPBrazil_Esteban_Ocon,GPAbuDhabi_Esteban_Ocon);
-
-                int Sebastian_Vettel = Klasemen.SumAllPts(null,null,GPAustralia_Sebastian_Vettel,GPEmiliaRomagna_Sebastian_Vettel,GPMiami_Sebastian_Vettel,GPSpain_Sebastian_Vettel,GPMonaco_Sebastian_Vettel,GPAzerbaijan_Sebastian_Vettel,GPCanada_Sebastian_Vettel,GPGreatBritanian_Sebastian_Vettel,GPAustria_Sebastian_Vettel,GPFrance_Sebastian_Vettel,GPHungary_Sebastian_Vettel,GPBelgium_Sebastian_Vettel,GPNetherlands_Sebastian_Vettel,GPItaly_Sebastian_Vettel,GPSingapore_Sebastian_Vettel,GPJapan_Sebastian_Vettel,GPUnitedStates_Sebastian_Vettel,GPMexico_Sebastian_Vettel,GPBrazil_Sebastian_Vettel,GPAbuDhabi_Sebastian_Vettel);
-
-                System.out.println(Sebastian_Vettel);
 
 
                     break;
@@ -1291,3 +1276,24 @@ public class GrandPrix {
         input.close();
     }
 }
+
+
+// int Max_Verstapen = Klasemen.SumAllPts(GPBahrain_Max_Verstappen,GPArabSaudi_Max_Verstappen,GPAustralia_Max_Verstappen,GPEmiliaRomagna_Max_Verstappen,GPMiami_Max_Verstappen,GPSpain_Max_Verstappen,GPMonaco_Max_Verstappen,GPAzerbaijan_Max_Verstappen,GPCanada_Max_Verstappen,GPGreatBritanian_Max_Verstappen,GPAustria_Max_Verstappen,GPFrance_Max_Verstappen,GPHungary_Max_Verstappen,GPBelgium_Max_Verstappen,GPNetherlands_Max_Verstappen,GPItaly_Max_Verstappen,GPSingapore_Max_Verstappen,GPJapan_Max_Verstappen,GPUnitedStates_Max_Verstappen,GPMexico_Max_Verstappen,GPBrazil_Max_Verstappen,GPAbuDhabi_Max_Verstappen);
+
+                // int Sergio_Perez = Klasemen.SumAllPts(GPBahrain_Sergio_Perez,GPArabSaudi_Sergio_Perez,GPAustralia_Sergio_Perez,GPEmiliaRomagna_Sergio_Perez,GPMiami_Sergio_Perez,GPSpain_Sergio_Perez,GPMonaco_Sergio_Perez,GPAzerbaijan_Sergio_Perez,GPCanada_Sergio_Perez,GPGreatBritanian_Sergio_Perez,GPAustria_Sergio_Perez,GPFrance_Sergio_Perez,GPHungary_Sergio_Perez,GPBelgium_Sergio_Perez,GPNetherlands_Sergio_Perez,GPItaly_Sergio_Perez,GPSingapore_Sergio_Perez,GPJapan_Sergio_Perez,GPUnitedStates_Sergio_Perez,GPMexico_Sergio_Perez,GPBrazil_Sergio_Perez,GPAbuDhabi_Sergio_Perez);
+
+                // int Charles_Leclerc = Klasemen.SumAllPts(GPBahrain_Charles_Leclerc,GPArabSaudi_Charles_Leclerc,GPAustralia_Charles_Leclerc,GPEmiliaRomagna_Charles_Leclerc,GPMiami_Charles_Leclerc,GPSpain_Charles_Leclerc,GPMonaco_Charles_Leclerc,GPAzerbaijan_Charles_Leclerc,GPCanada_Charles_Leclerc,GPGreatBritanian_Charles_Leclerc,GPAustria_Charles_Leclerc,GPFrance_Charles_Leclerc,GPHungary_Charles_Leclerc,GPBelgium_Charles_Leclerc,GPNetherlands_Charles_Leclerc,GPItaly_Charles_Leclerc,GPSingapore_Charles_Leclerc,GPJapan_Charles_Leclerc,GPUnitedStates_Charles_Leclerc,GPMexico_Charles_Leclerc,GPBrazil_Charles_Leclerc,GPAbuDhabi_Charles_Leclerc);
+                
+                // int Carlos_Sainz = Klasemen.SumAllPts(GPBahrain_ Nico Hülkenberg,GPArabSaudi_Carlos_Sainz,GPAustralia_Carlos_Sainz,GPEmiliaRomagna_Carlos_Sainz,GPMiami_Carlos_Sainz,GPSpain_Carlos_Sainz,GPMonaco_Carlos_Sainz,GPAzerbaijan_Carlos_Sainz,GPCanada_Carlos_Sainz,GPGreatBritanian_Carlos_Sainz,GPAustria_Carlos_Sainz,GPFrance_Carlos_Sainz,GPHungary_Carlos_Sainz,GPBelgium_Carlos_Sainz,GPNetherlands_Carlos_Sainz,GPItaly_Carlos_Sainz,GPSingapore_Carlos_Sainz,GPJapan_Carlos_Sainz,GPUnitedStates_Carlos_Sainz,GPMexico_Carlos_Sainz,GPBrazil_Carlos_Sainz,GPAbuDhabi_Carlos_Sainz);
+                
+                // int Lewis_Hamilton = Klasemen.SumAllPts(GPBahrain_Lewis_Hamilton,GPArabSaudi_Lewis_Hamilton,GPAustralia_Lewis_Hamilton,GPEmiliaRomagna_Lewis_Hamilton,GPMiami_Lewis_Hamilton,GPSpain_Lewis_Hamilton,GPMonaco_Lewis_Hamilton,GPAzerbaijan_Lewis_Hamilton,GPCanada_Lewis_Hamilton,GPGreatBritanian_Lewis_Hamilton,GPAustria_Lewis_Hamilton,GPFrance_Lewis_Hamilton,GPHungary_Lewis_Hamilton,GPBelgium_Lewis_Hamilton,GPNetherlands_Lewis_Hamilton,GPItaly_Lewis_Hamilton,GPSingapore_Lewis_Hamilton,GPJapan_Lewis_Hamilton,GPUnitedStates_Lewis_Hamilton,GPMexico_Lewis_Hamilton,GPBrazil_Lewis_Hamilton,GPAbuDhabi_Lewis_Hamilton);
+
+                // int George_Russell= Klasemen.SumAllPts(GPBahrain_George_Russell,GPArabSaudi_George_Russell,GPAustralia_George_Russell,GPEmiliaRomagna_George_Russell,GPMiami_George_Russell,GPSpain_George_Russell,GPMonaco_George_Russell,GPAzerbaijan_George_Russell,GPCanada_George_Russell,GPGreatBritanian_George_Russell,GPAustria_George_Russell,GPFrance_George_Russell,GPHungary_George_Russell,GPBelgium_George_Russell,GPNetherlands_George_Russell,GPItaly_George_Russell,GPSingapore_George_Russell,GPJapan_George_Russell,GPUnitedStates_George_Russell,GPMexico_George_Russell,GPBrazil_George_Russell,GPAbuDhabi_George_Russell);
+
+                // int Lando_Norris = Klasemen.SumAllPts(GPBahrain_Lando_Norris,GPArabSaudi_Lando_Norris,GPAustralia_Lando_Norris,GPEmiliaRomagna_Lando_Norris,GPMiami_Lando_Norris,GPSpain_Lando_Norris,GPMonaco_Lando_Norris,GPAzerbaijan_Lando_Norris,GPCanada_Lando_Norris,GPGreatBritanian_Lando_Norris,GPAustria_Lando_Norris,GPFrance_Lando_Norris,GPHungary_Lando_Norris,GPBelgium_Lando_Norris,GPNetherlands_Lando_Norris,GPItaly_Lando_Norris,GPSingapore_Lando_Norris,GPJapan_Lando_Norris,GPUnitedStates_Lando_Norris,GPMexico_Lando_Norris,GPBrazil_Lando_Norris,GPAbuDhabi_Lando_Norris);
+
+                // int Esteban_Ocon = Klasemen.SumAllPts(GPBahrain_Esteban_Ocon,GPArabSaudi_Esteban_Ocon,GPAustralia_Esteban_Ocon,GPEmiliaRomagna_Esteban_Ocon,GPMiami_Esteban_Ocon,GPSpain_Esteban_Ocon,GPMonaco_Esteban_Ocon,GPAzerbaijan_Esteban_Ocon,GPCanada_Esteban_Ocon,GPGreatBritanian_Esteban_Ocon,GPAustria_Esteban_Ocon,GPFrance_Esteban_Ocon,GPHungary_Esteban_Ocon,GPBelgium_Esteban_Ocon,GPNetherlands_Esteban_Ocon,GPItaly_Esteban_Ocon,GPSingapore_Esteban_Ocon,GPJapan_Esteban_Ocon,GPUnitedStates_Esteban_Ocon,GPMexico_Esteban_Ocon,GPBrazil_Esteban_Ocon,GPAbuDhabi_Esteban_Ocon);
+
+                // int Sebastian_Vettel = Klasemen.SumAllPts(null,null,GPAustralia_Sebastian_Vettel,GPEmiliaRomagna_Sebastian_Vettel,GPMiami_Sebastian_Vettel,GPSpain_Sebastian_Vettel,GPMonaco_Sebastian_Vettel,GPAzerbaijan_Sebastian_Vettel,GPCanada_Sebastian_Vettel,GPGreatBritanian_Sebastian_Vettel,GPAustria_Sebastian_Vettel,GPFrance_Sebastian_Vettel,GPHungary_Sebastian_Vettel,GPBelgium_Sebastian_Vettel,GPNetherlands_Sebastian_Vettel,GPItaly_Sebastian_Vettel,GPSingapore_Sebastian_Vettel,GPJapan_Sebastian_Vettel,GPUnitedStates_Sebastian_Vettel,GPMexico_Sebastian_Vettel,GPBrazil_Sebastian_Vettel,GPAbuDhabi_Sebastian_Vettel);
+
+                // System.out.println(Sebastian_Vettel);

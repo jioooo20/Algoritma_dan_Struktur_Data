@@ -3,6 +3,7 @@ package Quiz2.F1;
 public class Driver {
     String driver;
     int poin = 0, start_pos, finish_pos;
+    public static int no;
 
     Driver(int start_pos, String nama, int poin, int finish_pos) {
         this.start_pos = start_pos;
@@ -24,12 +25,16 @@ public class Driver {
         return poin;
     }
 
+    public void infoDriverFInal() {
+        System.out.printf("| %-3s | %-37s | %-3s |\n", no, driver, poin);
+    }
+
     public void infoDriver() {
         if (finish_pos == 0) {
-            // System.out.printf("| %-6s | %-25s | %-3d | %-6d |\n", "NC", driver, poin, start_pos);
+            System.out.printf("| %-6s | %-25s | %-6s |\n", "NC", driver, start_pos);
 
         } else{
-            System.out.printf("| %-6d | %-25s | %-7d | %-6d |\n", finish_pos, driver, poin, start_pos);
+            System.out.printf("| %-6d | %-25s | %-6s |\n", finish_pos, driver, start_pos);
         }
         // System.out.println(start_pos);
         // System.out.println(driver);
@@ -41,10 +46,6 @@ public class Driver {
             System.out.printf("| %-6s | %-25s | %-7d | %-6d |\n", "NC", driver, poin, start_pos);
 
         } 
-    }
-
-    public void finalPlacement(){
-        System.out.printf("| %-3s | %-31s | %-3s | %-3s |\n", "NO", "DRIVER", "PTS", "WIN");
     }
 
     public void BonusFastestLaps() { // bonus poin untuk pemegang lap tercepat(10 besar finish)

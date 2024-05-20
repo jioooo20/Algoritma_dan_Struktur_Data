@@ -1,8 +1,8 @@
 package Quiz2.F1;
 
 public class Klasemen {
-    Pos head;
-    int size;
+    public static Pos head;
+    public static int size;
     String tanggal;
 
     public Klasemen() {
@@ -26,23 +26,34 @@ public class Klasemen {
         tanggal = t;
     }
 
+    public void ResultFinal() {
+        if (!isEmpty()) {
+            Pos driver = head;
+            Driver.no = 1;
+            while (driver != null) {
+                driver.data.infoDriverFInal();
+                driver = driver.next;
+                Driver.no++;
+            }
+            System.out.println("=====================================================");
+        } else {
+            System.out.println("tidak ada balapan");
+        }
+    }
+
     public void Result() {
         if (!isEmpty()) {
             Pos driver = head;
-            Pos driverNol = head;
-            System.out.println("=====================================================");
-            System.out.printf("| %-6s | %-25s | %-7s | %-6s |\n", "FINISH", "DRIVER", "TOT PTS", "START");
-            System.out.println("-----------------------------------------------------");
+            System.out.println("===============================================");
+            System.out.printf("| %-6s | %-25s | %-6s |\n", "FINISH", "DRIVER", "START");
+            System.out.println("-----------------------------------------------");
             while (driver != null) { // yg ngga 0
                 // System.out.println(driver.data.infoDriver());
                 driver.data.infoDriver();
                 driver = driver.next;
             }
-            while (driverNol != null) { // yg 0
-                driverNol.data.infoDriverNol();
-                driverNol = driverNol.next;
-            }
-            System.out.println("=====================================================");
+            
+            System.out.println("===============================================");
             System.out.println(
                     " NOTES : NC is Not Completed karena kendala teknis \n atau lainnya seperti Diskualifikasi, Tidak Finish,\n Tidak Dalam Kualifier dan sebagainya");
 
@@ -64,16 +75,6 @@ public class Klasemen {
             current.next = newDriver;
         }
         size++;
-    }
-
-    public static int SumAllPts(Driver d1, Driver d2, Driver d3, Driver d4, Driver d5, Driver d6, Driver d7,
-            Driver d8,
-            Driver d9, Driver d10, Driver d11, Driver d12, Driver d13, Driver d14, Driver d15, Driver d16, Driver d17,
-            Driver d18, Driver d19, Driver d20, Driver d21, Driver d22) {
-        return d1.getPoin() + d2.getPoin() + d3.getPoin() + d4.getPoin() + d5.getPoin() + d6.getPoin() + d7.getPoin()
-                + d8.getPoin() + d9.getPoin() + d10.getPoin() + d11.getPoin() + d12.getPoin() + d13.getPoin()
-                + d14.getPoin() + d15.getPoin() + d16.getPoin() + d17.getPoin() + d18.getPoin() + d19.getPoin()
-                + d20.getPoin() + d21.getPoin() + d22.getPoin();
     }
 
     void insertionSortDescPTS() {
@@ -107,20 +108,6 @@ public class Klasemen {
             current = next;
         }
         head = sorted;
-        // System.out.println("=====================================================");
-        // System.out.println("| KLASEMEN FINAL |");
-        // System.out.println("-----------------------------------------------------");
-        // System.out.printf("| %-6s | %-25s | %-3s | %-6s |\n", "FINISH", "DRIVER",
-        // "PTS", "START");
-        // System.out.println("-----------------------------------------------------");
-
-        // // Menggunakan sorted untuk mencetak data driver yang telah diurutkan
-        // Pos temp = sorted;
-        // while (temp != null) {
-        // temp.data.infoDriver();
-        // temp = temp.next;
-        // }
-        // System.out.println("=====================================================");
     }
 
     void insertionSortAscFinish() {
@@ -156,18 +143,6 @@ public class Klasemen {
             current = next;// 21
         }
         head = sorted;
-        // System.out.println("=====================================================");
-        // System.out.println("| KLASEMEN SEMENTARA |");
-        // System.out.println("-----------------------------------------------------");
-        // System.out.printf("| %-6s | %-25s | %-3s | %-6s |\n", "FINISH", "DRIVER",
-        // "PTS", "START");
-        // System.out.println("-----------------------------------------------------");
-        // while (sorted != null) {
-        // // System.out.println(driver.data.infoDriver());
-        // sorted.data.infoDriver();
-        // sorted = sorted.next;
-        // }
-        // System.out.println("=====================================================");
     }
 
     public void SistemPoin(Driver d) {
