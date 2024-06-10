@@ -37,6 +37,26 @@ public class doubleLinkedLists {
         size++;
     }
 
+    public int get(int index) throws Exception {
+        if (index > size || index < 0) {
+            throw new Exception("Nilai index di luar batas");
+        }
+        Node13 temp = head;
+        for (int i = 1; i < index + 1; i++) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
+    public void update (int a, int t, int j){
+        Node13 temp = head;
+        for (int i = 1; i < a + 1; i++) {
+            temp = temp.next;
+        }
+        temp.inputTujuan(t);
+        temp.inputJarak(j);
+    }
+
     public int gerJarak(int index) throws Exception {
         if (isEmpty() || index >= size) {
             throw new Exception("Nilai index di luar batas");
@@ -131,14 +151,5 @@ public class doubleLinkedLists {
         return temp.data;
     }
 
-    public int get(int index) throws Exception {
-        if (index > size || index < 0) {
-            throw new Exception("Nilai index di luar batas");
-        }
-        Node13 temp = head;
-        for (int i = 1; i < index + 1; i++) {
-            temp = temp.next;
-        }
-        return temp.data;
-    }
+
 }

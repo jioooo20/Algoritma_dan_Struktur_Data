@@ -29,4 +29,23 @@ public class GraphMatriks13 {
         }
     }
 
+    public void degree(int a) {
+        int totIn = 0, totOut = 0;
+        
+        for (int i = 0; i < vertex; i++) {
+            // inDegree
+            if (matrix[i][a] != 0) {
+                totIn++;
+            }
+            // outDegree
+            if (matrix[a][i] != 0) {
+                totOut ++;
+            }
+        }
+
+        System.out.println("InDegree dari Gedung " + (char) ('A' + a) + ": " + totIn);
+        System.out.println("OutDegree dari Gedung " + (char) ('A' + a) + ": " + totOut);
+        System.out.println("Degree dari Gedung " + (char) ('A' + a) + ": " + (totIn + totOut));
+    }
+
 }

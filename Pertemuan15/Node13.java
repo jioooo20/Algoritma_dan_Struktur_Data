@@ -10,4 +10,11 @@ public class Node13 {
         this.next = next;
         this.jarak = jarak;
     }
+
+    public void inputTujuan(int t){
+        data = t;
+    }
+    public void inputJarak(int j){
+        jarak = j;
+    }
 }
